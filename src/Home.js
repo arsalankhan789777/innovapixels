@@ -67,11 +67,7 @@ const Home = () => {
         <div className='container-max'>
           <div className='left-sec-2'>
             <div className='h4-sec-2'>
-<<<<<<< HEAD
-              <p>Forr fifteen years, Ruckus has been delivering work that powers <strong>game-changing companies and global influencers.</strong></p>
-=======
-              <p>test jhjh For fifteen years, Ruckus has been delivering work that powers <strong>game-changing companies and global influencers.</strong></p>
->>>>>>> 45697372dfc059bb4a807af2919f7727b9fc2188
+              <p>For fifteen years, Ruckus has been delivering work that powers <strong>game-changing companies and global influencers.</strong></p>
             </div>
             <div className='p-sec-2'>
               <p>Our core strategic engagements in branding, platform design, campaigns, and content creation consistently drive desired outcomes and awareness.</p>

@@ -2,8 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: FuturaPT ;
+}
 
+@font-face {
+    font-family: FuturaPT;
+    src: url(../src/components/fonts/futura-pt/FuturaPTLight.otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: FuturaPT;
+    src: url(../src/components/fonts/futura-pt/FuturaPTMedium.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: FuturaPT;
+    src: url(../src/components/fonts/futura-pt/FuturaPTBold.otf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: FuturaPT;
+    src: url(../src/components/fonts/futura-pt/FuturaPTExtraBold.otf);
+    font-weight: 800;
 }
 
 a {
@@ -907,3 +930,121 @@ footer .footer-bot-navlink .menus ul li a,
     }
 
 }
+
+@media(max-width:450px) {
+    .footer-bot-navlink {
+        display: grid;
+        gap: 15px;
+    }
+
+    .footer__bot__address {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Services Page Css  */
+
+
+body.home-page-body .section2-services {
+    padding-top: 140px;
+}
+
+body.home-page-body .section2-services h2 {
+    display: block;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ff8300;
+    font-size: 60px;
+    line-height: 64px;
+}
+
+body.home-page-body .section2-services h2 strong {
+    font-weight: 700;
+}
+
+body.home-page-body .section2-services p {
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: 400;
+    width: 65%;
+    padding-top: 10px;
+}
+
+body.home-page-body .section2-services p strong {
+    font-weight: 600;
+}
+
+body.home-page-body header.header-normal svg path {
+    fill: #ff8300;
+}
+
+body.home-page-body header.header-normal a.logo-link:after {
+    background-color: #fff;
+}
+
+.Services-sections .service-inner h2 {
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 700;
+    color: black;
+    margin: 0;
+}
+
+.Services-sections .service-inner p {
+    font-size: 48px;
+    line-height: 54px;
+    color: black;
+    font-weight: 300;
+}
+
+a.Services-sections {
+    padding: 40px 0;
+    border-bottom: 1px solid #6f72744d;
+    transition: .5s all;
+    display: block;
+}
+
+a.Services-sections:hover {
+    color: #fff;
+    background-color: #ff8300;
+    transition: .5s all;
+}
+a.Services-sections:hover .service-inner p,
+a.Services-sections:hover .service-inner h2 {
+    color: #fff;
+}
+.service-inner::after {
+    background: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
