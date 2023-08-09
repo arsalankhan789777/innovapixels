@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import herosection from './components/hero.js';
+
 
 const about = () => {
   return (
-    <div>about</div>
+    <wrapper>
+      <herosection />
+    </wrapper>
+
   )
 }
 
