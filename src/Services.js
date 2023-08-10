@@ -37,6 +37,12 @@ const srvcs = [
   },
 ];
 
+const bggcontact3 = [
+  {
+    background: `url(${process.env.PUBLIC_URL}/images/bg-img.png)`,
+  }
+];
+
 
 const Services = () => {
 
@@ -72,7 +78,7 @@ const Services = () => {
         </a>
       ))}
       <div>
-        <Contacts4 />
+        <Contacts4 contactbg={bggcontact3} />
       </div>
     </wrapper>
 

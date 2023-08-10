@@ -2,6 +2,7 @@ import Home from "./Home";
 import Work from "./Work";
 import About from "./About";
 import Services from "./Services";
+import Contact from "./Contact";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/Work" element={<Work />} />
         <Route path="/Services" element={<Services />} />
         <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
       <Footer />
     </HashRouter>
