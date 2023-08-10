@@ -27,9 +27,10 @@ const Header = () => {
       <div className="container-max">
         <Navbar />
         <NavLink to="/" className="logo-link">
-          {/* <img src="./images/nlogo.svg" alt="logo" /> */}
-          <div class="svg svg--ruckus-logo"><svg viewBox="0 0 68 63.783"><g data-name="Group 4921"><path data-name="Path 40349" d="M68 63.783H0V0h68zm-6.8-26.492l-7.395-7.4 7.4-9.94-9.722-13.138H6.798v50.129l12.891-7.4v-14.27h24.669l3.95 3.877v10.4H61.2zM44.5 25.536H19.689v-9.2h24.864l3.39 4.492z" fill="#fff"></path></g></svg>
-          </div>
+          <div class="svg svg--ruckus-logo">
+            {/* <svg viewBox="0 0 68 63.783"><g data-name="Group 4921"><path data-name="Path 40349" d="M68 63.783H0V0h68zm-6.8-26.492l-7.395-7.4 7.4-9.94-9.722-13.138H6.798v50.129l12.891-7.4v-14.27h24.669l3.95 3.877v10.4H61.2zM44.5 25.536H19.689v-9.2h24.864l3.39 4.492z" fill="#fff"></path></g></svg> */}
+          <img src="./images/logo.svg" alt="logo" />
+          </div> 
         </NavLink>
         <div className="header-cta">
           <NavLink to="/">646-564-3880</NavLink>
@@ -38,7 +39,7 @@ const Header = () => {
           </NavLink>
         </div>
       </div>
-      
+
     </header>
   );
 };
