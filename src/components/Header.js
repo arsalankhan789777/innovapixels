@@ -33,8 +33,8 @@ const Header = () => {
           </div> 
         </NavLink>
         <div className="header-cta">
-          <NavLink to="/">646-564-3880</NavLink>
-          <NavLink className="btn2" to="/">
+          <NavLink to="tel:646-564-3880">646-564-3880</NavLink>
+          <NavLink className="btn2" to="/Contact">
             LET'S TALK
           </NavLink>
         </div>

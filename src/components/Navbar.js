@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -7,31 +7,40 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
     const navRef = useRef();
+    const [menuOpen, setMenuOpen] = useState(false);
 
-    const showNavbar = () => {
-        navRef.current.classList.toggle("responsive_nav")
-    }
+    const toggleNavbar = () => {
+        navRef.current.classList.toggle("responsive_nav");
+        setMenuOpen(!menuOpen);
+    };
+
+    const closeNavbar = () => {
+        if (menuOpen) {
+            navRef.current.classList.remove("responsive_nav");
+            setMenuOpen(false);
+        }
+    };
 
     return (
         <div className='Nav-Main'>
-            <nav ref={navRef}>
+            <nav ref={navRef} className={menuOpen ? "responsive_nav" : ""}>
                 <div className='menus'>
                     <ul>
                         <li>
-                            <NavLink to="/">Home</NavLink>
+                            <NavLink exact to="/" activeClassName="active-link" onClick={closeNavbar}>Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Work">Work</NavLink>
+                            <NavLink to="/Work" activeClassName="active-link" onClick={closeNavbar}>Work</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Services">Services</NavLink>
+                            <NavLink to="/Services" activeClassName="active-link" onClick={closeNavbar}>Services</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/About">About</NavLink>
+                            <NavLink to="/About" activeClassName="active-link" onClick={closeNavbar}>About</NavLink>
                         </li>
                      
                         <li>
-                            <NavLink to="/Contact">Contact</NavLink>
+                            <NavLink to="/Contact" activeClassName="active-link" onClick={closeNavbar}>Contact</NavLink>
                         </li>
                
                    
@@ -40,7 +49,7 @@ const Navbar = () => {
                 </div>
 
             </nav>
-            <div className='burger-btn' onClick={showNavbar}>
+            <div className={`burger-btn ${menuOpen ? "active" : ""}`} onClick={toggleNavbar}>
                 <FontAwesomeIcon icon={faBars} />
             </div>
         </div>

@@ -5,7 +5,10 @@ const Contacts4 = ({ contactbg }) => {
     return (
         <>
             {contactbg.map((item, index) => (
-                <div className='Main-Form-Background' style={{ backgroundImage: item.background }}>
+                <wrapper className="contact-main-wrapper">
+                    <div className='Main-Form-Background' style={{ backgroundImage: item.background }}>
+                        <h2>Contact Us</h2>
+                    </div>
                     <div className='contactform'>
                         <h3>Let's chat over a brew.</h3>
                         <span>Coffee, tea, or something stronger...</span>
@@ -27,8 +30,10 @@ const Contacts4 = ({ contactbg }) => {
                             <input id="submit" type="submit" value="Get Our Attention" />
                         </form>
                     </div>
-                </div>
+                </wrapper>
+
             ))}
+
         </>
     )
 }
