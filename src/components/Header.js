@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import Navbar from './Navbar';
-import Logo from './Logo';
 
 const Header = () => {
   const [color, setColor] = useState(false);
@@ -29,9 +28,7 @@ const Header = () => {
         <Navbar />
         <NavLink to="/" className="logo-link">
           <div class="svg svg--ruckus-logo">
-
-            < Logo />
-          
+          <img src="./images/logo.svg" alt="logo" />
           </div> 
         </NavLink>
         <div className="header-cta">
