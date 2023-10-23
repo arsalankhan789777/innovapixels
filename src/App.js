@@ -3,8 +3,8 @@ import Work from "./Work";
 import About from "./About";
 import Services from "./Services";
 import Contact from "./Contact";
-// import { HashRouter, Routes, Route } from "react-router-dom";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import './index.css';
@@ -17,7 +17,7 @@ import React from "react";
 
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
     {/* <Chatbot
         config={config}
         messageParser={MessageParser}
@@ -32,7 +32,7 @@ const App = () => {
         <Route path="/Contact" element={<Contact />} />
       </Routes>
       <Footer />
-    </Router>
+    </HashRouter>
   )
 }
 
