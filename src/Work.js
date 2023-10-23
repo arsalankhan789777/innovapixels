@@ -90,7 +90,7 @@ function ReactTabs() {
           heading: 'Axonius',
           text: 'work',
         },
-        {
+        { 
           link: '/custom-link-4',
           image: imagetab1_3,
           heading: 'The Cashmere Sale',
