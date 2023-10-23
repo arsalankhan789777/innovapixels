@@ -1,8 +1,10 @@
 {
-  "name": "innovapixels",
+  "homepage": "https://innovapixels.com",
+  "name": "first-project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
@@ -17,6 +19,7 @@
     "hero-slider": "^3.1.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
+    "react-chatbot-kit": "^2.1.2",
     "react-dom": "^18.2.0",
     "react-elastic-carousel": "^0.11.5",
     "react-player": "^2.12.0",
@@ -27,6 +30,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -51,6 +56,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "babel-plugin-react-require": "^4.0.0"
+    "babel-plugin-react-require": "^4.0.0",
+    "gh-pages": "^5.0.0"
   }
 }

@@ -2,60 +2,12 @@ import React from 'react';
 import VideoCarousel from './components/VideoCarousel';
 import CarouselS3 from './components/carousel';
 import Contacts4 from './components/contact';
-import imgbx1 from './components/images/boximage.PNG';
+import Brands from './components/Brands'
 
-
-const imgbx = [
+const bggcontact1 = [
   {
-    link: '#',
-    imageBoxes: imgbx1,
-    imageBoxestitle: 'Beauty / Skincare',
-
-  },
-  {
-    link: '#',
-    imageBoxes: imgbx1,
-    imageBoxestitle: 'Automotive',
-
-  },
-  {
-    link: '#',
-    imageBoxes: imgbx1,
-    imageBoxestitle: 'Beauty / Skincare',
-
-  },
-  {
-    link: '#',
-    imageBoxes: imgbx1,
-    imageBoxestitle: 'Government',
-
-  },
-  {
-    link: '#',
-    imageBoxes: imgbx1,
-    imageBoxestitle: 'Beauty / Skincare',
-
-  },
-  {
-    link: '#',
-    imageBoxes: imgbx1,
-    imageBoxestitle: 'Beauty / Skincare',
-
-  },
-  {
-    link: '#',
-    imageBoxes: imgbx1,
-    imageBoxestitle: 'Beauty / Skincare',
-
-  },
-  {
-    link: '#',
-    imageBoxes: imgbx1,
-    imageBoxestitle: 'Beauty / Skincare',
-
-  },
-
-
+    background: `url(${process.env.PUBLIC_URL}/images/bg-img.png)`,
+  }
 ];
 
 const Home = () => {
@@ -67,7 +19,7 @@ const Home = () => {
         <div className='container-max'>
           <div className='left-sec-2'>
             <div className='h4-sec-2'>
-              <p>test jhjh For fifteen years, Ruckus has been delivering work that powers <strong>game-changing companies and global influencers.</strong></p>
+              <p>saassasasaFor fifteen years, Ruckus has been delivering work that powers <strong>game-changing companies and global influencers.</strong></p>
             </div>
             <div className='p-sec-2'>
               <p>Our core strategic engagements in branding, platform design, campaigns, and content creation consistently drive desired outcomes and awareness.</p>
@@ -79,50 +31,19 @@ const Home = () => {
               </svg>
               </div>
             </div>
-
           </div>
-
           <div className='right-sec-2'>
             <img src='/images/sec-2-img.PNG' alt='img' />
           </div>
-
         </div>
       </div>
-
       <div className='section3'>
         <CarouselS3 />
       </div>
-
-
-
-      <div className='section4'>
-        <div className='container-max'>
-          <h2 className='recent-work r2'>Featured<span>Clients</span></h2>
-          <div className='main-img-boxex'>
-          {imgbx.map((item, index) => (
-            <div className='img-boxes' key={index}>
-              <a href={item.link} >
-              <img src={item.imageBoxes} alt="img" />
-              <p>{item.imageBoxestitle}</p>
-              </a>
-            </div>
-          ))}
-          </div>
-        </div>
-      </div>
-
+      <Brands />
       <div>
-        <Contacts4 />
+        <Contacts4 contactbg={bggcontact1} />
       </div>
-
-
-
-
-
-
-
-
-
     </wrapper>
   )
 }
