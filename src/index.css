@@ -32,7 +32,9 @@
 a {
     text-decoration: none !important;
 }
-
+.peventnone{
+    pointer-events: none;
+}
 .container-max {
     max-width: 1250px;
     margin: auto;
@@ -457,8 +459,27 @@ header.header-normal.header-bg a.btn2 {
 }
 
 .main-carr {
-    margin: 20px 15px;
     width: 100%;
+}
+
+
+/* Adjust the custom arrow styles as needed */
+.custom-arrow {
+  background-color: transparent;
+  color: #333;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-prev {
+  position: absolute;
+  left: 0;
+}
+
+.custom-next {
+  position: absolute;
+  right: 0;
 }
 
 .img-main img {
