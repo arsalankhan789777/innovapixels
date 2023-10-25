@@ -1,28 +1,19 @@
+import React from "react";
 import Home from "./Home";
 import Work from "./Work";
 import About from "./About";
 import Services from "./Services";
 import Contact from "./Contact";
-// import { HashRouter, Routes, Route } from "react-router-dom";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";  // Change here
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import './index.css';
-import React from "react";
-// import { Chatbot } from "react-chatbot-kit";
-// import config from "./components/chatbos/chatbotConfig";
-// import MessageParser from "./components/chatbos/MessageParser";
-// import ActionProvider from "./components/chatbos/ActionProvider";
-// import 'react-chatbot-kit/build/main.css'
+// ... (Other commented imports)
 
 const App = () => {
   return (
-    <Router>
-    {/* <Chatbot
-        config={config}
-        messageParser={MessageParser}
-        actionProvider={ActionProvider}
-      /> */}
+    <Router>  {/* Router is now HashRouter */}
+      {/* Other chatbot components */}
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -36,6 +27,4 @@ const App = () => {
   )
 }
 
-
-
-export default App
+export default App;
