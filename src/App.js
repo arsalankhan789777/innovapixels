@@ -4,16 +4,14 @@ import Work from "./Work";
 import About from "./About";
 import Services from "./Services";
 import Contact from "./Contact";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";  // Change here
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";  // Changed HashRouter to BrowserRouter
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import './index.css';
-// ... (Other commented imports)
 
 const App = () => {
   return (
-    <Router>  {/* Router is now HashRouter */}
-      {/* Other chatbot components */}
+    <Router>  
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
