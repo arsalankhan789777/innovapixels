@@ -1,41 +1,28 @@
+import React from "react";
 import Home from "./Home";
 import Work from "./Work";
 import About from "./About";
 import Services from "./Services";
 import Contact from "./Contact";
-// import { HashRouter, Routes, Route } from "react-router-dom";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";  // Change here
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import './index.css';
-import React from "react";
-// import { Chatbot } from "react-chatbot-kit";
-// import config from "./components/chatbos/chatbotConfig";
-// import MessageParser from "./components/chatbos/MessageParser";
-// import ActionProvider from "./components/chatbos/ActionProvider";
-// import 'react-chatbot-kit/build/main.css'
 
 const App = () => {
   return (
     <Router>
-    {/* <Chatbot
-        config={config}
-        messageParser={MessageParser}
-        actionProvider={ActionProvider}
-      /> */}
       <Header />
       <Routes>
-        <Route path="/gh-pages-url" element={<Home />} />
-        <Route path="/gh-pages-url/Work" element={<Work />} />
-        <Route path="/gh-pages-url/Services" element={<Services />} />
-        <Route path="/gh-pages-url/About" element={<About />} />
-        <Route path="/gh-pages-url/Contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/Work" element={<Work />} />
+        <Route path="/Services" element={<Services />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
   )
 }
 
-
-
-export default App
+export default App;
