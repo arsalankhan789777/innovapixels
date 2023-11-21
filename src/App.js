@@ -1,12 +1,12 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Home from "./Home";
 import Work from "./Work";
 import About from "./About";
 import Services from "./Services";
 import Contact from "./Contact";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";  // Change here
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 import './index.css';
 
 const App = () => {
@@ -15,10 +15,10 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Work" element={<Work />} />
-        <Route path="/Services" element={<Services />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Contact" element={<Contact />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
