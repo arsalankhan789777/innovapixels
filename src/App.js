@@ -4,7 +4,7 @@ import Work from "./Work";
 import About from "./About";
 import Services from "./Services";
 import Contact from "./Contact";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Change here
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import './index.css';
