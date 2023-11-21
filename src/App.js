@@ -1,37 +1,15 @@
-// App.js
-import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React from "react";
 import Home from "./Home";
 import Work from "./Work";
 import About from "./About";
 import Services from "./Services";
 import Contact from "./Contact";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Change here
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { createBrowserHistory } from 'history';
 import './index.css';
 
 const App = () => {
-  const history = createBrowserHistory();
-
-  useEffect(() => {
-    const removeHash = () => {
-      if (window.location.hash === '#/') {
-        const newURL = window.location.href.replace(/#.*/, '');
-        window.history.replaceState({}, document.title, newURL);
-      }
-    };
-
-    removeHash(); // Remove hash on initial load
-    const unlisten = history.listen(() => {
-      removeHash(); // Remove hash when routes change
-    });
-
-    return () => {
-      unlisten(); // Clean up history listener
-    };
-  }, [history]);
-
   return (
     <Router>
       <Header />
@@ -44,7 +22,7 @@ const App = () => {
       </Routes>
       <Footer />
     </Router>
-  );
+  )
 }
 
 export default App;
