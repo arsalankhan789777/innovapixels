@@ -29,7 +29,7 @@ const Navbar = () => {
                             <NavLink exact to="/" activeClassName="active-link" onClick={closeNavbar}>Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Work" activeClassName="active-link" onClick={closeNavbar}>Work</NavLink>
+                            <NavLink to="/Work" activeClassName="active-link" onClick={closeNavbar}>Work2</NavLink>
                         </li>
                         <li>
                             <NavLink to="/Services" activeClassName="active-link" onClick={closeNavbar}>Services</NavLink>
