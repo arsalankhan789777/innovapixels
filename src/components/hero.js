@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const hero = ({ herosectioncons }) => {
+const Hero = ({ herosectioncons }) => {
     return (
         <section>
             {herosectioncons.map((item, index) => (
@@ -22,4 +22,4 @@ const hero = ({ herosectioncons }) => {
     )
 }
 
-export default hero
+export default Hero;
