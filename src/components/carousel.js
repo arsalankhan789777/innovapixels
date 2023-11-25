@@ -87,4 +87,4 @@ const caross = [
 
 
 
-export default CarouselS3
+export default CarouselS3;
