@@ -70,11 +70,11 @@ Innovation runs deep in our core.</p>
                             <div className='hero-title'>
                                 <h1>
                                     <span className='d-span'>
-                                        Meet <strong>Father Time</strong>
+                                        Meet <strong>INNOVAPIXELS</strong>
                                     </span>
                                 </h1>
-                                <p>A masterful team that executes every engagement with precision, prowess, and power.<br></br>
-                                    Disruption is in our DNA.</p>
+                                <p>Our skilled team executes each project with precision, expertise, and impact.
+Disruption is in our Core.</p>
                                 <div class="button-content z2">
                                     <span class="b8 z2">Check Out Our Work</span>
                                     <div class="svg svg--arrow button-svg_arrow"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="svg-inline--fa fa-long-arrow-right fa-w-14" data-icon="long-arrow-right" data-prefix="fal" viewBox="0 0 448 512">
