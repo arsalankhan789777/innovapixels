@@ -19,10 +19,10 @@ const Home = () => {
         <div className='container-max'>
           <div className='left-sec-2'>
             <div className='h4-sec-2'>
-              <p>Arsaan fifteen years, Ruckus has been delivering work that powers <strong>game-changing companies and global influencers.</strong></p>
+              <p>For a decade, Innovapixels has consistently delivered influential work, <strong>empowering both innovative companies and global influencers.</strong></p>
             </div>
             <div className='p-sec-2'>
-              <p>Our core strategic engagements in branding, platform design, campaigns, and content creation consistently drive desired outcomes and awareness.</p>
+              <p>Our key strategic initiatives in branding, platform design and development, campaigns, and optimizations consistently drive the desired outcomes and enhance awareness.</p>
             </div>
             <div class="button-content z2">
               <span class="b8 z2">See Who We Are</span>
