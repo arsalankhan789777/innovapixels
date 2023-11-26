@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import imagetab1_1 from './components/images/image-2.jpg';
-import imagetab1_2 from './components/images/image-4.png';
-import imagetab1_3 from './components/images/image-3.png';
-import imagetab1_5 from './components/images/image-5.png';
-import imagetab1_6 from './components/images/image-6.jpg';
+import imagetab1_1 from './components/images/images-carousel/LiveWell.PNG';
+import imagetab1_2 from './components/images/images-carousel/NeoCharge.PNG';
+import imagetab1_3 from './components/images/images-carousel/Alfan.png';
 
 function TabSet({ title, tabs, activeTab, updateActiveTab }) {
   const [isToggled, setIsToggled] = useState(false);
@@ -94,18 +92,6 @@ function ReactTabs() {
           link: '/custom-link-4',
           image: imagetab1_3,
           heading: 'The Cashmere Sale',
-          text: 'work',
-        },
-        {
-          link: '/custom-link-4',
-          image: imagetab1_5,
-          heading: 'ETF.com',
-          text: 'work',
-        },
-        {
-          link: '/custom-link-4',
-          image: imagetab1_6,
-          heading: 'Mobileye',
           text: 'work',
         },
       ]

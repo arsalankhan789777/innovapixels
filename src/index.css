@@ -1336,19 +1336,15 @@ h2.our-work-heading {
   flex-wrap: wrap;
 }
 
-.show-content a {
-  width: 33%;
-}
 
-.show-content a:nth-child(1),
-.show-content a:nth-child(2) {
+.show-content a {
   width: 49.5%;
 }
 
 .show-content img {
   width: 100%;
-  object-fit: cover;
   height: 380px;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.037);
 }
 
 .hide-tabs-dropdown,
