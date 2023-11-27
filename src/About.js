@@ -8,10 +8,10 @@ import Contacts4 from './components/contact';
 
 const secondHerosectioncons = [
   {
-    link: '#',
+    link: '/Work',
     headinghero: 'AN AGENCY BUILT TO ',
     boldheading: 'CREATE REAL VALUE',
-    parahero: 'Ruckus is a growth partner. We’re a nimble, hungry, results-driven firm. We execute with purpose and focus on measurable, actionable results.',
+    parahero: 'Innovapixels is a growth partner. We’re a nimble, hungry, results-driven firm. We execute with purpose and focus on measurable, actionable results.',
     linktext: 'CHECK OUT OUR WORK',
     background: `url(${process.env.PUBLIC_URL}/images/bg-img2.jpg)`,
   }

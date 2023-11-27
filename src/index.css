@@ -252,7 +252,7 @@ header.header-normal.header-bg .header-cta a {
   color: #ff8300;
 }
 
-header a.logo-link:after {
+/* header a.logo-link:after {
   content: "";
   position: absolute;
   z-index: 1;
@@ -269,15 +269,14 @@ header a.logo-link:after {
   transform: translate(-50%, -50%);
   transition: 0.5s cubic-bezier(0.56, 0.01, 0.4, 1);
   opacity: 0;
+} */
+.svg--ruckus-logo path {
+  stroke: yellow;
+  stroke-width:.5;
 }
-
-header.header-normal.header-bg a.logo-link:after {
-  opacity: 1;
-  -webkit-transition-delay: 0.2s;
-  -o-transition-delay: 0.2s;
-  transition-delay: 0.2s;
+header.header-normal.header-bg .svg--ruckus-logo path{
+  stroke: black;
 }
-
 header.header-normal.header-bg .header-cta a:nth-child(2):hover {
   color: white;
   background-color: #ff8300;

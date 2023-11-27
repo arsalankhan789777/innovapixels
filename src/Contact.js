@@ -11,37 +11,37 @@ const conactdetailsconstin = [
   {
     addresstitle: 'DROP US A LINE',
     phone: 'PHONE',
-    tel:'+1 (646) 564-3880',
+    tel:'+44 (161) 818 7609',
     text1: 'GENERAL',
-    text2: 'info@ruckusco.com',
+    text2: 'info@innovapixels.com',
     text3: 'CAREERS',
-    text4: 'careers@ruckusco.com',
+    text4: 'careers@innovapixels.com',
     text5: 'PRESS & MEDIA',
-    text6: 'media@ruckusco.com',
+    text6: 'media@innovapixels.com',
   },
     
 ];
 
 const conactdetailsconstin2 = [
   {
-    StateTitle:'NEW YORK, NY',
-    AddressLink: 'https://goo.gl/maps/H1NAPCHtVYKPEvv47',
-    AddressTitle: '240 West 37th Street Floor 11 New York, NY 10018',
-    DirectionLink: 'https://goo.gl/maps/H1NAPCHtVYKPEvv47',
+    StateTitle:'west yorkshire',
+    AddressLink: 'https://maps.app.goo.gl/qf5N7XuCRzufVKWUA',
+    AddressTitle: '5 Villa Garden Warwick Road West Yorkshire Batley',
+    DirectionLink: 'https://maps.app.goo.gl/qf5N7XuCRzufVKWUA',
     DirectionTitle: 'GET DIRECTIONS',
 
   }
 ];
 
 const conactdetailsconstin3 = [
-  {
-    StateTitle:'ALLENTOWN, PA',
-    AddressLink: 'https://goo.gl/maps/H1NAPCHtVYKPEvv47',
-    AddressTitle: '612 Hamilton Street Floor 6 Allentown, PA 18101',
-    DirectionLink: 'https://goo.gl/maps/H1NAPCHtVYKPEvv47',
-    DirectionTitle: 'GET DIRECTIONS',
+  // {
+  //   StateTitle:'ALLENTOWN, PA',
+  //   AddressLink: 'https://goo.gl/maps/H1NAPCHtVYKPEvv47',
+  //   AddressTitle: '612 Hamilton Street Floor 6 Allentown, PA 18101',
+  //   DirectionLink: 'https://goo.gl/maps/H1NAPCHtVYKPEvv47',
+  //   DirectionTitle: 'GET DIRECTIONS',
 
-  }
+  // }
 ];
 
 const Contact = () => {

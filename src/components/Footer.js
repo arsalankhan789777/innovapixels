@@ -12,8 +12,8 @@ const Footer = () => {
         <h5><strong>Got a Project?</strong> Tell us everything.</h5>
         <div className='footer-top'>
           <div className="footer__top__contact">
-            <a href="tel:16465643880" class="footer__top__phone">1.646.564.3880</a>
-            <a className='footer__top__email' href='mailto:info@ruckusco.com'>info@ruckusco.com</a>
+            <a href="tel:+44 (161) 818 7609" class="footer__top__phone">+44 (161) 818 7609</a>
+            <a className='footer__top__email' href='mailto:info@ruckusco.com'>info@innovapixels.com</a>
           </div>
           <div className='nav-footer'>
             <Navbar />
@@ -23,7 +23,7 @@ const Footer = () => {
           <div className='footer__bot__address'>
             <b>HQ</b> -
             <a class="footer__bot__address-link" href="https://goo.gl/maps/H1NAPCHtVYKPEvv47" target="">
-              240 West 37th Street | Floor 11 | New York, NY 10018 </a>
+            5 Villa Garden Warwick Road West Yorkshire Batley </a>
           </div>
           <div className='footer-bot-row-social-icons'>
           <FontAwesomeIcon icon={faFacebookF} />
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
           <div className='footer-bot-navlink'>
             <Navbar />
-            <p>Ruckus Marketing, LLC © 2023</p>
+            <p>Innovapixels Marketing, LLC © 2024</p>
           </div>
         </div>
       </div>
