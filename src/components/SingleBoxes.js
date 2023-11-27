@@ -4,16 +4,16 @@ import React from 'react'
 
 const ContentSingle = [
     {
-        headigsingle: '1Creative Collaboration',
-        parasingle: 'Communication creates clarity. At Ruckus, our relationships are partnerships, with a common goal of engineering success through well-planned and well-executed strategies.',
+        headigsingle: 'Creative Collaboration',
+        parasingle: 'Communication creates clarity. At Innovapixels, our relationships are partnerships, with a common goal of engineering success through well-planned and well-executed strategies.',
     },
     {
-        headigsingle: '2Creative Collaboration',
-        parasingle: 'Communication creates clarity. At Ruckus, our relationships are partnerships, with a common goal of engineering success through well-planned and well-executed strategies.',
+        headigsingle: 'Alignment & Execution',
+        parasingle: 'Organization is the key to operating a deadline and results-driven environment. Innovapixels utilizes a variety of tools to achieve goals and enhance transparency.',
     },
     {
-        headigsingle: '3Creative Collaboration',
-        parasingle: 'Communication creates clarity. At Ruckus, our relationships are partnerships, with a common goal of engineering success through well-planned and well-executed strategies.',
+        headigsingle: 'Financial Intelligence',
+        parasingle: 'Everything we touch has financial implications— whether cost savings, improving margins, or generating new revenue streams. We’re not only aware of these considerations, we’re bound by them.',
     },
 ];
 

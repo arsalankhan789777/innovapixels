@@ -274,9 +274,10 @@ header.header-normal.header-bg .header-cta a {
   stroke: yellow;
   stroke-width:.5;
 }
-header.header-normal.header-bg .svg--ruckus-logo path{
+header.header-normal.header-bg .svg--ruckus-logo path,body.home-page-body header path{
   stroke: black;
 }
+
 header.header-normal.header-bg .header-cta a:nth-child(2):hover {
   color: white;
   background-color: #ff8300;
@@ -527,7 +528,6 @@ button:disabled {
 }
 .img-main img {
   width: 100%;
-  /* object-fit: cover; */
   height: 500px;
   border: 1px solid black;
 }
@@ -1054,6 +1054,9 @@ footer .footer-bot-navlink .menus ul li a,
     font-size: 22px;
     padding-right: 156px;
   }
+  .img-main img {
+    height: 400px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -1068,6 +1071,9 @@ footer .footer-bot-navlink .menus ul li a,
 
   .footer-bot-row-social-icons {
     margin-top: 20px;
+  }
+  .img-main img {
+    height: 300px;
   }
 }
 
@@ -1155,6 +1161,7 @@ footer .footer-bot-navlink .menus ul li a,
   .contactform form {
     margin: 20px 0;
   }
+
 }
 
 @media (max-width: 450px) {
@@ -1165,6 +1172,9 @@ footer .footer-bot-navlink .menus ul li a,
 
   .footer__bot__address {
     font-size: 15px;
+  }
+  .img-main img {
+    height: 250px;
   }
 }
 
@@ -1220,6 +1230,7 @@ body.home-page-body header.header-normal a.logo-link:after {
   line-height: 54px;
   color: black;
   font-weight: 300;
+  padding-right: 50px;
 }
 
 a.Services-sections {
@@ -1496,17 +1507,8 @@ wrapper .section1-hero {
   background-position: center;
   position: relative;
 }
-
 .section1-hero::after {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(transparent),
-    to(rgba(0, 0, 0, 0.6))
-  );
-  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.6));
-  background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.6));
+  background-image: linear-gradient(4deg, transparent, rgb(0 0 0 / 74%));
   content: "";
   position: absolute;
   top: 0;
@@ -1658,7 +1660,7 @@ wrapper .section1-hero .container-max {
 
 .map-section {
   background-color: #535151;
-  padding: 90px 0 100px;
+  padding: 130px 0;
   color: #fff;
   position: relative;
 }
@@ -1675,7 +1677,10 @@ wrapper .section1-hero .container-max {
   width: 50%;
   height: 100%;
 }
-
+.right-map-section iframe {
+  width: 100%;
+  height: 100%;
+}
 .left-map-section h1 {
   display: flex;
   font-weight: 300;
@@ -2071,6 +2076,9 @@ p.contact-info__contact-titlep2.stylesame-p {
 }
 
 @media (max-width: 550px) {
+  wrapper .section1-hero {
+    height:500px;
+}
   .first-des,
   .second-des {
     padding: 40px 0;

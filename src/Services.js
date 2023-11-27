@@ -13,8 +13,14 @@ const srvcs = [
   },
   {
     link: '#',
-    SrvcsHeading: 'Online Platforms',
+    SrvcsHeading: 'Designing Online Platforms',
     SrvcsDiscribtion: 'Purposeful, Beautiful Interface and Web Design',
+
+  },
+  {
+    link: '#',
+    SrvcsHeading: 'Development of online platforms',
+    SrvcsDiscribtion: 'Pixel perfect conversions of designs into web interfaces',
 
   },
   {
@@ -25,16 +31,11 @@ const srvcs = [
   },
   {
     link: '#',
-    SrvcsHeading: 'Trade Shows',
-    SrvcsDiscribtion: 'Engage with your Audience. Drive growth. Create Experiences.',
+    SrvcsHeading: 'Search Engine optimization',
+    SrvcsDiscribtion: 'Boosting website visibility and traffic through SEO strategies for web development platforms.',
 
   },
-  {
-    link: '#',
-    SrvcsHeading: 'Film, Video & Photography',
-    SrvcsDiscribtion: 'A World-Class Studio',
 
-  },
 ];
 
 const bggcontact3 = [
@@ -63,7 +64,7 @@ const Services = () => {
       <div className='section2-services'>
         <div className='container-max'>
           <h2>A FULL SERVICE <strong>DISRUPTOR</strong></h2>
-          <p>Whether project-specific or global, agency-of-record work, Ruckus is uniquely positioned to deliver strategic, growth-minded, and <strong>results-driven services.</strong></p>
+          <p>Whether project-specific or global, agency-of-record work, Innovapixels is uniquely positioned to deliver strategic, growth-minded, and <strong>results-driven services.</strong></p>
         </div>
       </div>
 
