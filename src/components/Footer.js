@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
           <div className='footer-bot-navlink'>
             <Navbar />
-            <p>Innovapixels Marketing, LLC © 2024</p>
+            <p>Innovapixels LLC © 2024</p>
           </div>
         </div>
       </div>

@@ -62,7 +62,7 @@ const About = () => {
       <div className='map-section'>
         <div className='container-max'>
           <div className='left-map-section'>
-            <h1>We’re at the heart of NYC <strong>Our reach is Global.</strong></h1>
+            <h1>We’re at the heart of UK <strong>Our reach is Global.</strong></h1>
             <div className="location-footer-location">
               <h4>WEST YORKSHIRE</h4>
               <a class="location-footer-location__address-link" href="https://goo.gl/maps/H1NAPCHtVYKPEvv47" target="">
