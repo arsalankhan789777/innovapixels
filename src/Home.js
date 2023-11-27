@@ -19,18 +19,15 @@ const Home = () => {
           <div className="left-sec-2">
             <div className="h4-sec-2">
               <p>
-                For a decade, Innovapixels has consistently delivered
-                influential work,{" "}
+              For a decade, Innovapixels has consistently delivered influential work, 
                 <strong>
-                  empowering both innovative companies and global influencers.
+                empowering both Businesses and global influencers.
                 </strong>
               </p>
             </div>
             <div className="p-sec-2">
               <p>
-                Our key strategic initiatives in branding, platform design and
-                development, campaigns, and optimizations consistently drive the
-                desired outcomes and enhance awareness.
+              Our core strategic engagements in branding, platform design, platform development, and search engine optimization consistently drive desired outcomes and awareness.
               </p>
             </div>
             <div class="button-content z2">

@@ -24,10 +24,7 @@ const VideoCarousel = () => {
               <div className="hero-title">
                 <h1>
                   <span className="d-span">
-                    An Entrepreneurial Minded Agency
-                  </span>
-                  <span className="d-span btm-span">
-                    <strong>+Creative Force</strong>
+                    A creative minded <span className="d-span btm-span"><strong> web development</strong> </span>agency
                   </span>
                 </h1>
                 <p>
@@ -69,12 +66,11 @@ const VideoCarousel = () => {
               <div className="hero-title">
                 <h1>
                   <span className="d-span">
-                    Meet <strong>INNOVAPIXELS</strong>
+                  Complete <strong>Web Solutions</strong>
                   </span>
                 </h1>
                 <p>
-                  Our skilled team executes each project with precision,
-                  expertise, and impact. Disruption is in our Core.
+                From Requirement Analysis to Concept, Design, Development, and SEO Excellence.
                 </p>
                 <div class="button-content z2">
                 <Link to="/Work" className="b8 z2">
@@ -115,8 +111,7 @@ const VideoCarousel = () => {
                   </span>
                 </h1>
                 <p>
-                  Our skilled team executes each project with precision,
-                  expertise, and impact. Innovation runs deep in our core.
+                At our core, quality is non-negotiable. We prioritize it above all else, leaving no room for compromise in our commitment to excellence.
                 </p>
                 <div class="button-content z2">
                   <Link to="/Work" className="b8 z2">
