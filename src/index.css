@@ -271,7 +271,7 @@ header.header-normal.header-bg .header-cta a {
   opacity: 0;
 } */
 .svg--ruckus-logo path {
-  stroke: #ff8300;
+  stroke: #ffff;
   stroke-width:.5;
 }
 header.header-normal.header-bg .svg--ruckus-logo path,body.home-page-body header path{
