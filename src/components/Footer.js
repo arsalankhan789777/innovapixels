@@ -32,10 +32,10 @@ const Footer = () => {
           <FontAwesomeIcon icon={faLinkedinIn} />
           <FontAwesomeIcon icon={faYoutube} />
           </div>
-          <div className='footer-bot-navlink'>
+          {/* <div className='footer-bot-navlink'>
             <Navbar />
-            {/* <p>Innovapixels LLC © 2024</p> */}
-          </div>
+            <p>Innovapixels LLC © 2024</p>
+          </div> */}
         </div>
       </div>
     </footer>
