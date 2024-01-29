@@ -24,7 +24,7 @@ const VideoCarousel = () => {
               <div className="hero-title">
                 <h1>
                   <span className="d-span">
-                    A creative mindedw <span className="d-span btm-span"><strong> web development</strong> </span>agency
+                    A creative minded <span className="d-span btm-span"><strong> web development</strong> </span>agency
                   </span>
                 </h1>
                 <p>
