@@ -1916,10 +1916,13 @@ wrapper .section1-hero .container-max {
 .section-about {
   background-image: url("./components/images/bg-img3.jpg");
   background-repeat: no-repeat;
-  background-size: 58% 83%;
+  background-size: cover;
   background-position: left top;
 }
-
+.righ-sec-about {
+  background-color: #00000021;
+  padding: 40px;
+}
 .dublicate-hero .content-hero h2 {
   display: flex;
   flex-direction: column;
