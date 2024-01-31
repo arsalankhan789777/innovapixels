@@ -1,7 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import image1carousel from './images/Hero-Background/bghero.png';
-import work1 from './images/images-carousel/Alfan.png';
+import work1 from './images/SiteFrontImages/getneocharge.com.png';
+import work2 from './images/SiteFrontImages/calltrackingmetrics.com.png';
+import work3 from './images/SiteFrontImages/impossiblehq.com.png';
+import work4 from './images/SiteFrontImages/jibble.io.png';
 
 export const HomeHero = () => {
   const imgElementsRef = useRef([]);
@@ -54,32 +57,35 @@ export const HomeHero = () => {
   return (
     <div className="MainHero" style={{ backgroundImage: `url(${image1carousel})` }}>
       <div className="container-max">
+
+
+        <div className="Content_Hero">
+          <h1> A creative minded web development agency</h1>
+          <p>Our skilled team executes each project with precision,
+                  expertise, and impact. Innovation runs deep in our core.</p>
+          <Link to="/Work" className="b8 z2">Check out our work</Link>
+        </div>
         <div className="AnimatedFlipp">
           <div className="img_work_featured">
             <div className='imageAndContentMain'>
               <img src={work1} alt='img' />
-              <h1 className='heading_animated'>Design</h1>
+              <h1 className='heading_animated'>Information gathering and Planning</h1>
             </div>
             <div className='imageAndContentMain'>
-              <img src={work1} alt='img' />
-              <h1 className='heading_animated'>Design</h1>
+              <img src={work2} alt='img' />
+              <h1 className='heading_animated'>Visualization and Design</h1>
             </div>
             <div className='imageAndContentMain'>
-              <img src={work1} alt='img' />
-              <h1 className='heading_animated'>Design</h1>
+              <img src={work3} alt='img' />
+              <h1 className='heading_animated'>Development </h1>
             </div>
             <div className='imageAndContentMain'>
-              <img src={work1} alt='img' />
-              <h1 className='heading_animated'>Design</h1>
+              <img src={work4} alt='img' />
+              <h1 className='heading_animated'>Testing and Maintenance</h1>
             </div>
           </div>
         </div>
 
-        <div className="Content_Hero">
-          <h1>Offer construction</h1>
-          <p>There will be the text description for your services and abilities</p>
-          <Link to="/Work" className="b8 z2">Check out our work</Link>
-        </div>
       </div>
     </div>
   );
