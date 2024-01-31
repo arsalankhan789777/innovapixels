@@ -1779,7 +1779,7 @@ wrapper .section1-hero {
 }
 
 .section1-hero::after,
-.contact-us-page::after {
+.contact-us-page::after,.Main-Form-Background::after {
   background-image: linear-gradient(4deg, transparent, rgb(0 0 0 / 74%));
   content: "";
   position: absolute;
@@ -1791,7 +1791,8 @@ wrapper .section1-hero {
   z-index: 300;
   pointer-events: none;
 }
-.hero_about_bottom .section1-hero::after {
+.hero_about_bottom .section1-hero::after,.Main-Form-Background::after,
+.contact-us-page::after {
   background-image: linear-gradient(199deg, transparent, rgb(0 0 0 / 74%));
 }
 wrapper .section1-hero .container-max {
