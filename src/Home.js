@@ -1,8 +1,15 @@
 import React from "react";
-import VideoCarousel from "./components/VideoCarousel";
+// import VideoCarousel from "./components/VideoCarousel";
 import CarouselS3 from "./components/carousel";
 import Contacts4 from "./components/contact";
 import Brands from "./components/Brands";
+import HomeHero from "./components/HomeHero";
+import { ClientFeedback } from "./components/ClientFeedback";
+
+
+
+
+
 
 const bggcontact1 = [
   {
@@ -13,21 +20,22 @@ const bggcontact1 = [
 const Home = () => {
   return (
     <wrapper>
-      <VideoCarousel />
+      {/* <VideoCarousel /> */}
+      < HomeHero />
       <div className="section2">
         <div className="container-max">
           <div className="left-sec-2">
             <div className="h4-sec-2">
               <p>
-              For a decade, Innovapixels has consistently delivered influential work, 
+                For a decade, Innovapixels has consistently delivered influential work,
                 <strong>
-                empowering both Businesses and global influencers.
+                  empowering both Businesses and global influencers.
                 </strong>
               </p>
             </div>
             <div className="p-sec-2">
               <p>
-              Our core strategic engagements in branding, platform design, platform development, and search engine optimization consistently drive desired outcomes and awareness.
+                Our core strategic engagements in branding, platform design, platform development, and search engine optimization consistently drive desired outcomes and awareness.
               </p>
             </div>
             <div class="button-content z2">
@@ -117,6 +125,7 @@ const Home = () => {
         <CarouselS3 />
       </div>
       <Brands />
+      <ClientFeedback />
       <div>
         <Contacts4 contactbg={bggcontact1} />
       </div>

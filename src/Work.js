@@ -44,16 +44,9 @@ function TabSet({ title, tabs, activeTab, updateActiveTab }) {
 
 function ReactTabs() {
   const [activeTabStages, setActiveTabStages] = useState(0);
-  const [activeTabServices, setActiveTabServices] = useState(0);
 
   const handleActiveTabChangeStages = (id) => {
     setActiveTabStages(id);
-    setActiveTabServices(0);
-  };
-
-  const handleActiveTabChangeServices = (id) => {
-    setActiveTabServices(id);
-    setActiveTabStages(0);
   };
 
   const stages = [
@@ -74,7 +67,7 @@ function ReactTabs() {
     },
     {
       id: 1,
-      label: 'Enterprise',
+      label: 'Wordpress',
       content: [
         {
           link: '/custom-link-3',
@@ -98,7 +91,23 @@ function ReactTabs() {
     },
     {
       id: 2,
-      label: 'Established',
+      label: 'Shopify',
+      content: [
+        {
+          image: imagetab1_2,
+          text: 'Established Content 1',
+          link: '/custom-link-4'
+        },
+        {
+          image: imagetab1_1,
+          text: 'Established Content 2',
+          link: '/custom-link-5'
+        }
+      ]
+    },
+    {
+      id: 3,
+      label: 'Wix',
       content: [
         {
           image: imagetab1_2,
@@ -113,26 +122,8 @@ function ReactTabs() {
       ]
     },
   ];
-
-  const services = [
-    {
-      id: 0,
-    },
-    {
-      id: 1,
-      label: 'Service 1',
-      content: [
-        {
-          image: imagetab1_1,
-          text: 'Service 1 Content 1',
-          link: '/custom-link-5'
-        }
-      ]
-    },
-  ];
-
-  const tabs = activeTabServices === 0 ? stages : services;
-  const activeTab = activeTabServices === 0 ? activeTabStages : activeTabServices;
+  const tabs = stages;
+  const activeTab = activeTabStages;
 
   return (
     <div className="Section-1-Our-Work">
@@ -148,14 +139,6 @@ function ReactTabs() {
                 tabs={stages}
                 activeTab={activeTabStages}
                 updateActiveTab={handleActiveTabChangeStages}
-              />
-            </div>
-            <div className="inner-tab-left-main">
-              <TabSet
-                title="SERVICES"
-                tabs={services}
-                activeTab={activeTabServices}
-                updateActiveTab={handleActiveTabChangeServices}
               />
             </div>
           </div>
