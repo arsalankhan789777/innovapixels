@@ -1007,23 +1007,31 @@ footer .footer-bot-navlink .menus ul li a,
 }
 
 /* footer css  */
-.ClientFeedback .container-max {
+.ClientFeedback h2 {
+  color: #ff8300;
+  font-size: 45px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.flex-clients-says {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   align-items: center;
   padding: 20px 0 70px;
 }
-.ClientFeedback .container-max video {
+.flex-clients-says video {
  width: 100%;
 }
-.ClientFeedback .container-max p {
+.flex-clients-says p {
   font-size: 24px;
  }
- .ClientFeedback .container-max br {
+ .flex-clients-says br {
   margin-top: 10px;
  }
- .ClientFeedback .container-max p {
+ .flex-clients-says p {
   font-size: 20px;
   margin-bottom: 15px;
   font-weight: 400;
@@ -1073,6 +1081,22 @@ footer .footer-bot-navlink .menus ul li a,
 }
 
 @media (max-width: 1025px) {
+  .MainHero .container-max {
+    align-items: flex-start;
+}
+h1.heading_animated {
+  font-size: 21px;
+  line-height: 27px;
+}
+.Content_Hero h1 {
+  font-size: 36px;
+  padding: 00;
+}
+.Content_Hero p {
+  font-size: 21px;
+  line-height: 25px;
+}
+
   .AnimatedFlipp img {
     height: 140px;
   }
@@ -1222,7 +1246,7 @@ footer .footer-bot-navlink .menus ul li a,
 }
 
 @media (max-width: 900px) {
-  .ClientFeedback .container-max {
+  .flex-clients-says {
     grid-template-columns: 1fr ;
   }
 
@@ -1264,13 +1288,12 @@ footer .footer-bot-navlink .menus ul li a,
 @media (max-width: 768px) {
   .MainHero .container-max {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 40px;
   }
-
   .Content_Hero p {
-    width: 100%;
-  }
+    width: 75%;
+}
 
   .Content_Hero,
   .AnimatedFlipp {
@@ -1395,17 +1418,20 @@ footer .footer-bot-navlink .menus ul li a,
 }
 
 @media (max-width: 450px) {
-  .ClientFeedback .container-max p {
+  .flex-clients-says p {
     font-size: 18px;
 }
-.ClientFeedback .container-max {
+.flex-clients-says {
   padding: 20px 0 32px;
 }
   .AnimatedFlipp {
     display: none;
 }
 .Content_Hero h1 {
-  font-size: 37px;
+  font-size: 30px;
+}
+.Content_Hero p {
+  width: 100%;
 }
   .footer-bot-navlink {
     display: grid;
