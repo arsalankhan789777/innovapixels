@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contacts4 = ({ contactbg }) => {
@@ -32,6 +32,20 @@ const Contacts4 = ({ contactbg }) => {
       );
   };
 
+  useEffect(() => {
+    // Load the reCAPTCHA script when the component mounts
+    const script = document.createElement('script');
+    script.src = 'https://www.google.com/recaptcha/api.js';
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+
+    // Optionally, you can remove the script when the component unmounts
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
   return (
     <>
       {contactbg.map((item, index) => (
@@ -39,11 +53,6 @@ const Contacts4 = ({ contactbg }) => {
           <div className='Main-Form-Background' style={{ backgroundImage: item.background }}>
             <h2>Contact Us</h2>
           </div>
-          <head>
-            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-            <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
-            </script>
-          </head>
           <div className='contactform'>
             <h3>Let's chat over a brew.</h3>
             <span>Coffee, tea, or something stronger...</span>
