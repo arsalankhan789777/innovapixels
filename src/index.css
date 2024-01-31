@@ -1791,7 +1791,9 @@ wrapper .section1-hero {
   z-index: 300;
   pointer-events: none;
 }
-
+.hero_about_bottom .section1-hero::after {
+  background-image: linear-gradient(199deg, transparent, rgb(0 0 0 / 74%));
+}
 wrapper .section1-hero .container-max {
   display: flex;
   align-items: flex-end;

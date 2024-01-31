@@ -2,7 +2,7 @@ import React from 'react';
 import HeroSection from './components/Hero';
 // import { useEffect } from 'react';
 import SingleBoxes from './components/SingleBoxes';
-import Brands from './components/Brands';
+// import Brands from './components/Brands';
 import Contacts4 from './components/contact';
 import { Link } from "react-router-dom";
 
@@ -55,8 +55,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Brands />
-      <div className='dublicate-hero'>
+      {/* <Brands /> */}
+      <div className='dublicate-hero hero_about_bottom'>
         <HeroSection herosectioncons={secondHerosectioncons2} />
       </div>
       <div className='map-section'>
