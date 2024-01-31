@@ -1,10 +1,10 @@
-import React from "react";
 // import VideoCarousel from "./components/VideoCarousel";
 import CarouselS3 from "./components/carousel";
 import Contacts4 from "./components/contact";
 import Brands from "./components/Brands";
 import HomeHero from "./components/HomeHero";
 import { ClientFeedback } from "./components/ClientFeedback";
+import React, { useEffect } from "react";
 
 
 
@@ -18,6 +18,15 @@ const bggcontact1 = [
 ];
 
 const Home = () => {
+
+
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []); // Empty dependency array ensures this effect runs only on mount
+
+ 
+
   return (
     <wrapper>
       {/* <VideoCarousel /> */}

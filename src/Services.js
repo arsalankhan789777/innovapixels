@@ -3,34 +3,35 @@ import React from 'react'
 // import Footer from "./components/Footer";
 import { useEffect } from 'react';
 import Contacts4 from './components/contact';
+import { Link } from 'react-router-dom';
 
 
 const srvcs = [
   {
-    link: '#',
+    link: '/contact',
     SrvcsHeading: 'Branding',
     SrvcsDiscribtion: 'Design The Story',
   },
   {
-    link: '#',
+    link: '/contact',
     SrvcsHeading: 'Designing Online Platforms',
     SrvcsDiscribtion: 'Purposeful, Beautiful Interface and Web Design',
 
   },
   {
-    link: '#',
+    link: '/contact',
     SrvcsHeading: 'Development of online platforms',
     SrvcsDiscribtion: 'Pixel perfect conversions of designs into web interfaces',
 
   },
   {
-    link: '#',
+    link: '/contact',
     SrvcsHeading: 'Marketing Campaigns',
     SrvcsDiscribtion: 'Drive Customer Action and Engagement',
 
   },
   {
-    link: '#',
+    link: '/contact',
     SrvcsHeading: 'Search Engine optimization',
     SrvcsDiscribtion: 'Boosting website visibility and traffic through SEO strategies for web development platforms.',
 
@@ -69,14 +70,14 @@ const Services = () => {
       </div>
 
       {srvcs.map((item, index) => (
-        <a className='Services-sections' href={item.link} >
+        <Link className='Services-sections' to={item.link} >
           <div className='container-max'>
             <div className='service-inner' key={index}>
               <h2>{item.SrvcsHeading}</h2>
               <p>{item.SrvcsDiscribtion}</p>
             </div>
           </div>
-        </a>
+        </Link>
       ))}
       <div>
         <Contacts4 contactbg={bggcontact3} />
