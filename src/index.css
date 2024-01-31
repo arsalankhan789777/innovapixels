@@ -513,18 +513,19 @@ a.carousel-control-next span.visually-hidden {
 
 h1.heading_animated {
   position: absolute;
+  border: 2px solid #ff8e17;
   display: flex;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: white;
+  background: black;
   align-items: center;
   justify-content: center;
   font-size: 50px;
   transform: rotateY(180deg);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  color: white;
 }
 
 .imageAndContentMain.animated {
