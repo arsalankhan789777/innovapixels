@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import imagetab1_1 from './components/images/images-carousel/LiveWell.PNG';
-import imagetab1_2 from './components/images/images-carousel/NeoCharge.PNG';
-import imagetab1_3 from './components/images/images-carousel/Alfan.png';
+import shopify1 from './components/images/images-carousel/LiveWell.PNG';
+import wordpress1 from './components/images/images-carousel/NeoCharge.PNG';
+import wix1 from './components/images/images-carousel/Alfan.png';
 
 function TabSet({ title, tabs, activeTab, updateActiveTab }) {
-  const [isToggled, setIsToggled] = useState(false);
-
-  const handleToggle = () => {
-    setIsToggled((prevToggled) => !prevToggled);
-  };
+  const [isToggled] = useState(false);
 
   useEffect(() => {
     document.body.classList.add('home-page-body');
@@ -19,14 +15,6 @@ function TabSet({ title, tabs, activeTab, updateActiveTab }) {
 
   return (
     <div>
-      <h2 className={isToggled ? 'arrow-top' : ''} onClick={handleToggle}>
-        {title}
-        <div className="svg svg--chevron-down sidebar-filter__cat__arrow">
-          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="svg-inline--fa fa-chevron-down fa-w-14" data-icon="chevron-down" data-prefix="fas" viewBox="0 0 448 512">
-            <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
-          </svg>
-        </div>
-      </h2>
       <div className={isToggled ? 'hide-tabs-dropdown' : ''}>
         {tabs.map((tab) => (
           <div
@@ -52,18 +40,8 @@ function ReactTabs() {
   const stages = [
     {
       id: 0,
-      content: [
-        {
-          image: imagetab1_1,
-          text: 'Stage 0 Content 1',
-          link: '/custom-link-1'
-        },
-        {
-          image: imagetab1_2,
-          text: 'Stage 0 Content 2',
-          link: '/custom-link-2'
-        }
-      ]
+      label: 'All Works',
+      content: [],
     },
     {
       id: 1,
@@ -71,57 +49,42 @@ function ReactTabs() {
       content: [
         {
           link: '/custom-link-3',
-          image: imagetab1_1,
-          heading: 'Crayola',
+          image: shopify1,
+          heading: 'Wordpress',
           text: 'View Work',
         },
-        {
-          link: '/custom-link-4',
-          image: imagetab1_2,
-          heading: 'Axonius',
-          text: 'work',
-        },
-        { 
-          link: '/custom-link-4',
-          image: imagetab1_3,
-          heading: 'The Cashmere Sale',
-          text: 'work',
-        },
-      ]
+      ],
     },
     {
       id: 2,
       label: 'Shopify',
       content: [
         {
-          image: imagetab1_2,
-          text: 'Established Content 1',
-          link: '/custom-link-4'
+          image: wordpress1,
+          text: 'Shopify',
+          link: '/custom-link-4',
         },
-        {
-          image: imagetab1_1,
-          text: 'Established Content 2',
-          link: '/custom-link-5'
-        }
-      ]
+      ],
     },
     {
       id: 3,
       label: 'Wix',
       content: [
         {
-          image: imagetab1_2,
-          text: 'Established Content 1',
-          link: '/custom-link-4'
+          image: wix1,
+          text: 'Wix',
+          link: '/custom-link-4',
         },
-        {
-          image: imagetab1_1,
-          text: 'Established Content 2',
-          link: '/custom-link-5'
-        }
-      ]
+      ],
     },
+    // Add more stages as needed
   ];
+
+  // Dynamically populate "All Works" tab content based on other tabs
+  stages[0].content = stages
+    .slice(1) // Exclude the "All Works" tab itself
+    .flatMap((tab) => tab.content);
+
   const tabs = stages;
   const activeTab = activeTabStages;
 

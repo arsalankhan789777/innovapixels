@@ -152,7 +152,8 @@ header li a:hover,
   opacity: 1;
   transition: 0.1s all;
   height: 30px;
-  filter: brightness(32.2) saturate(65%) hue-rotate(30deg);
+  filter: invert(1);
+
 }
 
 .Nav-Main li a.active::after,
@@ -332,6 +333,7 @@ header.header-normal.header-bg a.btn2 {
   opacity: 0.25;
   z-index: 1;
 }
+
 /* 
 .hero-title {
   z-index: 2;
@@ -468,6 +470,7 @@ a.carousel-control-next span.visually-hidden {
   padding-bottom: 130px;
   position: relative;
 }
+
 .MainHero::after {
   position: absolute;
   content: "";
@@ -477,15 +480,17 @@ a.carousel-control-next span.visually-hidden {
   right: 0;
   left: 0;
   bottom: 0;
-  background: linear-gradient(to left bottom, #ff000000,#00000045);
+  background: linear-gradient(to left bottom, #ff000000, #00000045);
 }
-.MainHero .container-max{
+
+.MainHero .container-max {
   z-index: 1;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: end;
 }
+
 /* .Content_Hero {
   margin-top: -150px;
   width: 50%;
@@ -499,6 +504,7 @@ a.carousel-control-next span.visually-hidden {
   text-shadow: 0px 0px 10px #000000;
   padding-right: 110px;
 }
+
 .Content_Hero p {
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -553,7 +559,7 @@ h1.heading_animated {
   border-radius: 5px;
   text-transform: capitalize;
   font-family: "Montserrat", sans-serif;
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .imageAndContentMain.animated {
@@ -1025,20 +1031,25 @@ footer .footer-bot-navlink .menus ul li a,
   align-items: center;
   padding: 20px 0 70px;
 }
+
 .flex-clients-says video {
- width: 100%;
+  width: 100%;
 }
+
 .flex-clients-says p {
   font-size: 24px;
- }
- .flex-clients-says br {
+}
+
+.flex-clients-says br {
   margin-top: 10px;
- }
- .flex-clients-says p {
+}
+
+.flex-clients-says p {
   font-size: 20px;
   margin-bottom: 15px;
   font-weight: 400;
 }
+
 /* responsive css  */
 @media (min-width: 1025px) {
   .burger-btn {
@@ -1086,19 +1097,22 @@ footer .footer-bot-navlink .menus ul li a,
 @media (max-width: 1025px) {
   .MainHero .container-max {
     align-items: flex-start;
-}
-h1.heading_animated {
-  font-size: 21px;
-  line-height: 27px;
-}
-.Content_Hero h1 {
-  font-size: 36px;
-  padding: 00;
-}
-.Content_Hero p {
-  font-size: 21px;
-  line-height: 25px;
-}
+  }
+
+  h1.heading_animated {
+    font-size: 21px;
+    line-height: 27px;
+  }
+
+  .Content_Hero h1 {
+    font-size: 36px;
+    padding: 00;
+  }
+
+  .Content_Hero p {
+    font-size: 21px;
+    line-height: 25px;
+  }
 
   .AnimatedFlipp img {
     height: 140px;
@@ -1250,7 +1264,7 @@ h1.heading_animated {
 
 @media (max-width: 900px) {
   .flex-clients-says {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
   }
 
   .section2 .container-max {
@@ -1294,9 +1308,10 @@ h1.heading_animated {
     flex-direction: column;
     gap: 40px;
   }
+
   .Content_Hero p {
     width: 75%;
-}
+  }
 
   .Content_Hero,
   .AnimatedFlipp {
@@ -1317,7 +1332,7 @@ h1.heading_animated {
 
 
 @media (max-width: 700px) {
- 
+
 
   .footer-bot {
     display: block;
@@ -1423,19 +1438,24 @@ h1.heading_animated {
 @media (max-width: 450px) {
   .flex-clients-says p {
     font-size: 18px;
-}
-.flex-clients-says {
-  padding: 20px 0 32px;
-}
+  }
+
+  .flex-clients-says {
+    padding: 20px 0 32px;
+  }
+
   .AnimatedFlipp {
     display: none;
-}
-.Content_Hero h1 {
-  font-size: 30px;
-}
-.Content_Hero p {
-  width: 100%;
-}
+  }
+
+  .Content_Hero h1 {
+    font-size: 30px;
+  }
+
+  .Content_Hero p {
+    width: 100%;
+  }
+
   .footer-bot-navlink {
     display: grid;
     gap: 15px;
@@ -1782,7 +1802,8 @@ wrapper .section1-hero {
 }
 
 .section1-hero::after,
-.contact-us-page::after,.Main-Form-Background::after {
+.contact-us-page::after,
+.Main-Form-Background::after {
   background-image: linear-gradient(4deg, transparent, rgb(0 0 0 / 74%));
   content: "";
   position: absolute;
@@ -1794,10 +1815,13 @@ wrapper .section1-hero {
   z-index: 300;
   pointer-events: none;
 }
-.hero_about_bottom .section1-hero::after,.Main-Form-Background::after,
+
+.hero_about_bottom .section1-hero::after,
+.Main-Form-Background::after,
 .contact-us-page::after {
   background-image: linear-gradient(199deg, transparent, rgb(0 0 0 / 74%));
 }
+
 wrapper .section1-hero .container-max {
   display: flex;
   align-items: flex-end;
@@ -1922,10 +1946,12 @@ wrapper .section1-hero .container-max {
   background-size: cover;
   background-position: left top;
 }
+
 .righ-sec-about {
   background-color: #00000021;
   padding: 40px;
 }
+
 .dublicate-hero .content-hero h2 {
   display: flex;
   flex-direction: column;
