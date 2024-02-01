@@ -152,6 +152,7 @@ header li a:hover,
   opacity: 1;
   transition: 0.1s all;
   height: 30px;
+  filter: invert(1);
 }
 
 .Nav-Main li a.active::after,
