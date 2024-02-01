@@ -152,7 +152,7 @@ header li a:hover,
   opacity: 1;
   transition: 0.1s all;
   height: 30px;
-  filter: invert(1);
+  filter: brightness(32.2) saturate(65%) hue-rotate(30deg);
 }
 
 .Nav-Main li a.active::after,
@@ -160,6 +160,8 @@ header li a:hover,
   opacity: 1;
   transition: 0.1s all;
   height: 30px;
+  filter: invert(1);
+
 }
 
 a.btn2.active {
