@@ -1,8 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Carousel from 'react-elastic-carousel';
-import image1carousel from './images/images-carousel/LiveWell.PNG';
-import image2carousel from './images/images-carousel/NeoCharge.PNG';
-import image3carousel from './images/images-carousel/Alfan.png';
+import shopify1 from './images/images-carousel/LiveWell.PNG';
+import shopify2 from './images/images-carousel/NeoCharge.PNG';
+import wordpress1 from './images/images-carousel/Alfan.png';
+import wix1 from './images/images-carousel/quest-films.jpg';
+
+
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -16,7 +19,7 @@ const CarouselS3 = () => {
   const caross = [
     {
       link: 'https://livewellproject.co.uk/',
-      image: image1carousel,
+      image: shopify1,
       content: 'See What We Did',
       services: 'Design(UI/UX), Development, SEO, Social integrations',
       title: 'Live Well Project',
@@ -24,21 +27,29 @@ const CarouselS3 = () => {
     },
     {
       link: 'https://getneocharge.com/',
-      image: image2carousel,
+      image: shopify2,
       content: 'See What We Did',
       services: 'Design(UI/UX), Development, SEO, Social integrations',
       title: 'Get Neo Charge',
       excerpt: 'A Charging Station For Electric Cars',
     },
     {
-      link: 'https://alfangroup.com/',
-      image: image3carousel,
+      link: 'https://www.quest-films.com/',
+      image: wix1,
       content: 'See What We Did',
       services: 'Design(UI/UX), Development, SEO, Social integrations ',
-      title: 'Alfan',
+      title: 'Quest-Films',
+      excerpt: 'Video Production',
+    },
+    {
+      link: 'https://alfangroup.com/',
+      image: wordpress1,
+      content: 'See What We Did',
+      services: 'Design(UI/UX), Development, SEO, Social integrations ',
+      title: 'Alfan Group',
       excerpt: 'The Platform for Content Creators',
     },
-    // Add more items as needed...
+   
   ];
 
   useEffect(() => {

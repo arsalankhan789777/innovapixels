@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import shopify1 from './components/images/images-carousel/LiveWell.PNG';
-import wordpress1 from './components/images/images-carousel/NeoCharge.PNG';
-import wix1 from './components/images/images-carousel/Alfan.png';
+import shopify2 from './components/images/images-carousel/NeoCharge.PNG';
+import wordpress1 from './components/images/images-carousel/Alfan.png';
+import wix1 from './components/images/images-carousel/quest-films.jpg';
 
 function TabSet({ title, tabs, activeTab, updateActiveTab }) {
   const [isToggled] = useState(false);
@@ -48,11 +49,12 @@ function ReactTabs() {
       label: 'Wordpress',
       content: [
         {
-          link: '/custom-link-3',
-          image: shopify1,
-          heading: 'Wordpress',
+          link: 'https://alfangroup.com/',
+          heading: 'Alfan Group',
           text: 'View Work',
+          image: wordpress1,
         },
+       
       ],
     },
     {
@@ -60,10 +62,18 @@ function ReactTabs() {
       label: 'Shopify',
       content: [
         {
-          image: wordpress1,
-          text: 'Shopify',
-          link: '/custom-link-4',
+          link: 'https://livewellproject.co.uk/',
+          heading: 'Live Well Project',
+          text: 'View Work',
+          image: shopify1,
         },
+        {
+          link: 'https://getneocharge.com/',
+          heading: 'Get Neo Charge',
+          text: 'View Work',
+          image: shopify2,
+
+        }
       ],
     },
     {
@@ -71,9 +81,10 @@ function ReactTabs() {
       label: 'Wix',
       content: [
         {
+          link: 'https://www.quest-films.com/',
+          heading: 'Quest-Films',
+          text: 'View Work',
           image: wix1,
-          text: 'Wix',
-          link: '/custom-link-4',
         },
       ],
     },
