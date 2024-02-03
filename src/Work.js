@@ -39,7 +39,7 @@ function TabSet({ title, tabs, activeTab, updateActiveTab }) {
 
 function ReactTabs() {
   const [activeTabStages, setActiveTabStages] = useState(0);
-  const [projectsPerPage, setProjectsPerPage] = useState(40);
+  const [projectsPerPage, setProjectsPerPage] = useState(4);
   const [currentPage, setCurrentPage] = useState(1);
 
   const handleActiveTabChangeStages = (id) => {
