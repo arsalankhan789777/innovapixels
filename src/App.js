@@ -9,13 +9,10 @@ import About from "./About";
 import Services from "./Services";
 import Contact from "./Contact";
 import './index.css';
-import Layout from './Layout';
-
 
 const App = () => {
   return (
     <Router>
-    <Layout>
       <Header />
       <ScrollToTop />
       <Routes>
@@ -26,7 +23,6 @@ const App = () => {
         <Route path="/Contact" element={<Contact />} />
       </Routes>
       <Footer />
-    </Layout>
     </Router>
   );
 };

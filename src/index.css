@@ -2507,13 +2507,14 @@ p.contact-info__contact-titlep2.stylesame-p {
 
 
 
+/* TopLoadingBar.css */
 .top-loading-bar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #29b6f6; /* Change the color as needed */
+  background-color: #29b6f6;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
@@ -2527,6 +2528,6 @@ p.contact-info__contact-titlep2.stylesame-p {
 .progress {
   height: 100%;
   width: 0;
-  background-color: #ff8f00; /* Change the color as needed */
+  background-color: #ff8f00;
   transition: width 0.3s;
 }
