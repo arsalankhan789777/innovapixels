@@ -2498,3 +2498,35 @@ p.contact-info__contact-titlep2.stylesame-p {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+
+
+
+
+
+
+.top-loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #29b6f6; /* Change the color as needed */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.top-loading-bar.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  background-color: #ff8f00; /* Change the color as needed */
+  transition: width 0.3s;
+}
