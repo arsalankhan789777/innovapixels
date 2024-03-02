@@ -3,12 +3,32 @@ import React, { useState, useEffect } from 'react';
 // Import your image files here
 import shopify1 from './components/images/images-carousel/LiveWell.PNG';
 import shopify2 from './components/images/images-carousel/NeoCharge.PNG';
+import shopify3 from './components/images/images-carousel/valorelondon.png';
+import shopify4 from './components/images/images-carousel/reskinethos.png';
+import shopify5 from './components/images/images-carousel/doubleblackski.png';
+import shopify6 from './components/images/images-carousel/virginiabeachcardshop.png';
+import shopify7 from './components/images/images-carousel/joeywolffer.png';
+import shopify8 from './components/images/images-carousel/lediel.png';
+import shopify9 from './components/images/images-carousel/gooditsglutenfree.png';
+import shopify10 from './components/images/images-carousel/littlegreenradicals.png';
+import shopify11 from './components/images/images-carousel/diabloorganics.png';
+import shopify12 from './components/images/images-carousel/openteams.png';
+import shopify13 from './components/images/images-carousel/vitaminpatchclub.png';
+import shopify14 from './components/images/images-carousel/fossilrealm.png';
+import shopify15 from './components/images/images-carousel/domogummies.png';
 import wordpress1 from './components/images/images-carousel/Alfan.png';
 import wordpress2 from './components/images/images-carousel/calltrackingmetrics.png';
 import wordpress3 from './components/images/images-carousel/wisebuilders.org.png';
 import wordpress4 from './components/images/images-carousel/jibble.io.png';
+import wordpress5 from './components/images/images-carousel/impossiblehq.png';
+import wordpress6 from './components/images/images-carousel/emmk.png';
+import wordpress7 from './components/images/images-carousel/rosehan.png';
+import wordpress8 from './components/images/images-carousel/historicflix.png';
 import wix1 from './components/images/images-carousel/quest-films.jpg';
 import webflow1 from './components/images/images-carousel/prismaticcapital.png';
+import webflow2 from './components/images/images-carousel/moriss.png';
+import webflow3 from './components/images/images-carousel/flowresearchcollective.png';
+import Squarespace1 from './components/images/images-carousel/meyercenter.png';
 
 function TabSet({ title, tabs, activeTab, updateActiveTab }) {
   const [isToggled] = useState(false);
@@ -85,6 +105,30 @@ function ReactTabs() {
           text: 'View Work',
           image: wordpress4,
         },
+        {
+          link: 'https://impossiblehq.com/',
+          heading: 'PUSH YOUR LIMITS DO SOMETHING IMPOSSIBLE',
+          text: 'View Work',
+          image: wordpress5,
+        },
+        {
+          link: 'https://emmk.no/',
+          heading: 'Emmk Online Shop',
+          text: 'View Work',
+          image: wordpress6,
+        },
+        {
+          link: 'https://rosehan.com/',
+          heading: 'Rose han',
+          text: 'View Work',
+          image: wordpress7,
+        },
+        {
+          link: 'https://historicflix.com/',
+          heading: 'Historic Flix',
+          text: 'View Work',
+          image: wordpress8,
+        },
        
       ],
     },
@@ -103,7 +147,84 @@ function ReactTabs() {
           heading: 'Get Neo Charge',
           text: 'View Work',
           image: shopify2,
-
+        },
+        {
+          link: 'https://valorelondon.com/',
+          heading: 'Valore London Where Journeys Begin',
+          text: 'View Work',
+          image: shopify3,
+        },
+        {
+          link: 'https://www.reskinethos.com/',
+          heading: 'Skin Ethos',
+          text: 'View Work',
+          image: shopify4,
+        },
+        {
+          link: 'https://doubleblackski.com/',
+          heading: 'Double Black Ski',
+          text: 'View Work',
+          image: shopify5,
+        },
+        {
+          link: 'https://virginiabeachcardshop.com/',
+          heading: 'Virginia Beach Card Shop',
+          text: 'View Work',
+          image: shopify6,
+        },
+        {
+          link: 'https://joeywolffer.com/',
+          heading: 'Joey Wölffer',
+          text: 'View Work',
+          image: shopify7,
+        },
+        {
+          link: 'https://lediel.com/es-us',
+          heading: 'Lediel',
+          text: 'View Work',
+          image: shopify8,
+        },
+        {
+          link: 'https://gooditsglutenfree.com/',
+          heading: 'GREAT TASTING & ALLERGY FREE',
+          text: 'View Work',
+          image: shopify9,
+        },
+        {
+          link: 'https://littlegreenradicals.com/en-row',
+          heading: 'Little Green Radicals',
+          text: 'View Work',
+          image: shopify10,
+        },
+        {
+          link: 'https://diabloorganics.com/pages/home',
+          heading: 'JIMMY BUDDHA DESIGNS',
+          text: 'View Work',
+          image: shopify11,
+        },
+        {
+          link: 'https://www.openteams.com/',
+          heading: 'If You Work With Open Source... You Need OpenTeams',
+          text: 'View Work',
+          image: shopify12,
+        },
+        {
+          link: 'https://vitaminpatchclub.com/',
+          heading: 'Vitamins Made Easy',
+          text: 'View Work',
+          image: shopify13,
+        },
+        {
+          link: 'https://www.fossilrealm.com/',
+          heading: 'Fossil Realm',
+          text: 'View Work',
+          image: shopify14,
+        },
+        {
+          link: 'https://domogummies.com/',
+          heading: 'Ready to reset your sleep?',
+          text: 'View Work',
+          image: shopify15,
         }
       ],
     },
@@ -129,6 +250,32 @@ function ReactTabs() {
           text: 'View Work',
           image: webflow1,
         },
+        
+        {
+          link: 'https://www.amoriss.com/',
+          heading: 'Amoriss Love where you live.',
+          text: 'View Work',
+          image: webflow2,
+        },
+        {
+          link: 'https://www.flowresearchcollective.com/',
+          heading: 'THE GLOBAL LEADER IN PEAK PERFORMANCE RESEARCH & TRAINING.',
+          text: 'View Work',
+          image: webflow3,
+        },
+      ],
+    },
+    {
+      id: 5,
+      label: 'Squarespace',
+      content: [
+        {
+          link: 'https://www.meyercenter.org/',
+          heading: 'Meyer Center For Special Children',
+          text: 'View Work',
+          image: Squarespace1,
+        },
+        
       ],
     },
     // Add more stages as needed
