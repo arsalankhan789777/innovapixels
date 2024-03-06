@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Carousel from 'react-elastic-carousel';
-import shopify1 from './images/images-carousel/LiveWell.png';
-import shopify2 from './images/images-carousel/NeoCharge.png';
+// import shopify1 from './images/images-carousel/LiveWell.png';
+// import shopify2 from './images/images-carousel/NeoCharge.png';
 import wordpress1 from './images/images-carousel/Alfan.png';
 import wix1 from './images/images-carousel/quest-films.jpg';
 
@@ -19,7 +19,8 @@ const CarouselS3 = () => {
   const caross = [
     {
       link: 'https://livewellproject.co.uk/ ',
-      image: shopify1,
+      // image: shopify1,
+      image: wordpress1,
       content: 'See What We Did',
       services: 'Design(UI/UX), Development, SEO, Social integrations',
       title: 'Live Well Project',
@@ -27,7 +28,8 @@ const CarouselS3 = () => {
     },
     {
       link: 'https://getneocharge.com/',
-      image: shopify2,
+      // image: shopify2,
+      image: wordpress1,
       content: 'See What We Did',
       services: 'Design(UI/UX), Development, SEO, Social integrations',
       title: 'Get Neo Charge',

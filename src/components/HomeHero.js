@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import image1carousel from './images/Hero-Background/bghero.png';
-import work1 from './images/images-carousel/NeoCharge.png';
+// import work1 from './images/images-carousel/NeoCharge.png';
 import work2 from './images/images-carousel/calltrackingmetrics.png';
 import work3 from './images/images-carousel/impossiblehq.png';
 import work4 from './images/images-carousel/jibble.io.png';
@@ -68,7 +68,7 @@ export const HomeHero = () => {
         <div className="AnimatedFlipp">
           <div className="img_work_featured">
             <div className='imageAndContentMain'>
-              <img src={work1} alt='img' />
+              <img src={work2} alt='img' />
               <h1 className='heading_animated'>Information gathering and Planning</h1>
             </div>
             <div className='imageAndContentMain'>
