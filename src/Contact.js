@@ -4,7 +4,7 @@ import ContactDetails from './components/ContactDetails';
 
 const bggcontact = [
   {
-    background: `url(${process.env.PUBLIC_URL}/images/bg-img3.jpg)`,
+    background: `url(${process.env.PUBLIC_URL}/images/bg-img.png)`,
   }
 ];
 const conactdetailsconstin = [

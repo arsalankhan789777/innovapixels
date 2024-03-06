@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import image1carousel from './images/Hero-Background/bghero.png';
-import work1 from './images/SiteFrontImages/getneocharge.com.png';
-import work2 from './images/SiteFrontImages/calltrackingmetrics.com.png';
-import work3 from './images/SiteFrontImages/impossiblehq.com.png';
-import work4 from './images/SiteFrontImages/jibble.io.png';
+import work1 from './images/images-carousel/NeoCharge.png';
+import work2 from './images/images-carousel/calltrackingmetrics.png';
+import work3 from './images/images-carousel/impossiblehq.png';
+import work4 from './images/images-carousel/jibble.io.png';
 
 export const HomeHero = () => {
   const imgElementsRef = useRef([]);
@@ -60,7 +60,7 @@ export const HomeHero = () => {
 
 
         <div className="Content_Hero">
-          <h1>1 A creative minded web development agency</h1>
+          <h1>A creative minded web development agency</h1>
           <p>Our skilled team executes each project with precision,
                   expertise, and impact. Innovation runs deep in our core.</p>
           <Link to="/Work" className="b8 z2">Check out our work</Link>

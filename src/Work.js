@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 // Import your image files here
-import shopify1 from './components/images/images-carousel/LiveWell.PNG';
-import shopify2 from './components/images/images-carousel/NeoCharge.PNG';
+import shopify1 from './components/images/images-carousel/LiveWell.png';
+import shopify2 from './components/images/images-carousel/NeoCharge.png';
 import shopify3 from './components/images/images-carousel/valorelondon.png';
 import shopify4 from './components/images/images-carousel/reskinethos.png';
 import shopify5 from './components/images/images-carousel/doubleblackski.png';

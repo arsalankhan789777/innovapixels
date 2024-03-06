@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Carousel from 'react-elastic-carousel';
-import shopify1 from './images/images-carousel/LiveWell.PNG';
-import shopify2 from './images/images-carousel/NeoCharge.PNG';
+import shopify1 from './images/images-carousel/LiveWell.png';
+import shopify2 from './images/images-carousel/NeoCharge.png';
 import wordpress1 from './images/images-carousel/Alfan.png';
 import wix1 from './images/images-carousel/quest-films.jpg';
 
