@@ -9,29 +9,18 @@ const CustomProgressBar = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const calculatePageLoadProgress = () => {
-      const { timing } = window.performance;
+    const handlePageLoad = () => {
+      setProgress(100);
 
-      if (timing.loadEventEnd > 0) {
-        // Page has finished loading
-        setProgress(100);
-      } else {
-        // Page is still loading, calculate progress based on current time
-        const currentTime = new Date().getTime();
-        const totalLoadTime = timing.loadEventEnd - timing.navigationStart;
-        const elapsedLoadTime = currentTime - timing.navigationStart;
-
-        const newProgress = Math.min((elapsedLoadTime / totalLoadTime) * 100, 99);
-        setProgress(newProgress);
-      }
+      // Optionally, you can add additional logic here
+      // For example, hide the progress bar or perform other actions
     };
 
-    // Attach the listener for page load progress
-    window.addEventListener('load', calculatePageLoadProgress);
+    window.addEventListener('load', handlePageLoad);
 
     // Clean up the event listener on component unmount
     return () => {
-      window.removeEventListener('load', calculatePageLoadProgress);
+      window.removeEventListener('load', handlePageLoad);
     };
   }, [location.pathname]);
 
