@@ -45,11 +45,11 @@ header {
   z-index: 99999999;
 }
 .react-progress-bar-percent {
-  background: #ff8300;
-  box-shadow: 0 0 10px #ff8300, 0 0 5px #ff8300;
+  background: #ff8300 !important;
+  box-shadow: 0 0 10px #ff8300, 0 0 5px #ff8300 !important;
 }
 .react-progress-bar {
-  z-index: 9999999999999999999999999;
+  z-index: 9999999999999999999999999 !important;
 }
 header .container-max {
   display: grid;
