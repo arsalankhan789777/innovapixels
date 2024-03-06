@@ -44,7 +44,13 @@ header {
   transition: 0.5s cubic-bezier(0.56, 0.01, 0.4, 1);
   z-index: 99999999;
 }
-
+.react-progress-bar-percent {
+  background: #ff8300;
+  box-shadow: 0 0 10px #ff8300, 0 0 5px #ff8300;
+}
+.react-progress-bar {
+  z-index: 9999999999999999999999999;
+}
 header .container-max {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
