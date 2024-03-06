@@ -18,7 +18,7 @@ const CarouselS3 = () => {
 
   const caross = [
     {
-      link: 'https://livewellproject.co.uk/',
+      link: 'https://livewellproject.co.uk/ ',
       image: shopify1,
       content: 'See What We Did',
       services: 'Design(UI/UX), Development, SEO, Social integrations',
