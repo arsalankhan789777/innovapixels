@@ -1,49 +1,35 @@
-import React, { useState, useEffect } from 'react';
-import LoadingBar from 'react-top-loading-bar';
+// Layout.js
+import React, { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
+import axios from 'axios';
+import LoadingBar from './LoadingBar';
 
 const Layout = ({ children }) => {
-  const [loading, setLoading] = useState(0);
-  const [totalImages, setTotalImages] = useState(0);
-  const [loadedImages, setLoadedImages] = useState(0);
+  const loadingBarRef = useRef(null);
+  const location = useLocation();
 
   useEffect(() => {
-    const imageUrls = ['url1', 'url2', 'url3']; // Replace with your image URLs
-    setTotalImages(imageUrls.length);
+    // Reset loading bar on each navigation
+    loadingBarRef.current.complete();
+    loadingBarRef.current.continuousStart();
+  }, [location.pathname]); // Trigger on route change
 
-    const loadImage = (url) => {
-      const img = new Image();
-      img.onload = handleImageLoad;
-      img.src = url;
-    };
+  useEffect(() => {
+    // Intercept AJAX requests and update loading bar
+    const axiosInterceptor = axios.interceptors.request.use((config) => {
+      loadingBarRef.current.increase(5); // Adjust the increment value
+      return config;
+    });
 
-    function handleImageLoad() {
-      setLoadedImages((prev) => prev + 1);
-    }
-
-    // Load images
-    imageUrls.forEach(loadImage);
-
+    // Set up a cleanup function
     return () => {
-      // Cleanup if needed
+      axios.interceptors.request.eject(axiosInterceptor);
     };
-  }, []);
-
-  useEffect(() => {
-    // Calculate loading progress based on loaded images
-    const progress = (loadedImages / totalImages) * 100;
-    setLoading(progress);
-
-    // If all images are loaded, reset the loading state
-    if (progress === 100) {
-      setTimeout(() => {
-        setLoading(0);
-      }, 500); // Add a delay before resetting to visually indicate completion
-    }
-  }, [loadedImages, totalImages]);
+  }, []); // Run only once when component mounts
 
   return (
     <div>
-      <LoadingBar progress={loading} height={3} color="#f11946" onLoaderFinished={() => setLoading(0)} />
+      <LoadingBar ref={loadingBarRef} height={3} color="#f11946" onLoaderFinished={() => loadingBarRef.current.complete()} />
       {children}
     </div>
   );
