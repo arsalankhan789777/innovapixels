@@ -8,13 +8,13 @@ import Work from "./Work";
 import About from "./About";
 import Services from "./Services";
 import Contact from "./Contact";
-import Layout from "./components/Layout"; // Import the Layout component
 import './index.css';
+import Layout from "./components/Layout";
 
 const App = () => {
   return (
     <Router>
-      <Layout> {/* Use Layout as a wrapper */}
+      <Layout> 
         <Header />
         <ScrollToTop />
         <Routes>
