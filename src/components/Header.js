@@ -26,7 +26,7 @@ const Header = () => {
     <header className={color ? "header-normal header-bg" : "header-normal"}>
       <div className="container-max">
         <Navbar />
-        <NavLink to="/" className="logo-link">
+        <NavLink to="" className="logo-link" aria-label="LogoIMG">
           <div class="svg svg--ruckus-logo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
