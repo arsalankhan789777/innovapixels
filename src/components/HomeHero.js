@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom'; 
-import image1carousel from './images/images-carousel/NeoCharge.png';
-// import work1 from './images/images-carousel/NeoCharge.png';
+import image1carousel from './images/Hero-Background/bghero.png';
+import image1carouselmobile from './images/Hero-Background/bgheromobile.png';
+import work1 from './images/images-carousel/NeoCharge.png';
 import work2 from './images/images-carousel/calltrackingmetrics.png';
 import work3 from './images/images-carousel/impossiblehq.png';
 import work4 from './images/images-carousel/jibble.io.png';
@@ -55,10 +56,10 @@ export const HomeHero = () => {
   }, []); // Empty dependency array ensures the effect runs only once on component mount
 
   return (
-    <div className="MainHero" style={{ backgroundImage: `url(${image1carousel})` }}>
+    <div className="MainHero" style={{ 
+      backgroundImage: window.innerWidth <= 767 ? `url(${image1carouselmobile})` : `url(${image1carousel})`,
+    }}>
       <div className="container-max">
-
-
         <div className="Content_Hero">
           <h1> A creative minded web development agency  </h1>
           <p>Our skilled team executes each project with precision,
@@ -68,7 +69,7 @@ export const HomeHero = () => {
         <div className="AnimatedFlipp">
           <div className="img_work_featured">
             <div className='imageAndContentMain'>
-              <img src={work2} alt='img' />
+              <img src={work1} alt='img' />
               <h1 className='heading_animated'>Information gathering and Planning</h1>
             </div>
             <div className='imageAndContentMain'>
