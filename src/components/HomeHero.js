@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom'; 
 import image1carousel from './images/Hero-Background/bghero.webp';
-import image1carouselmobile from './images/Hero-Background/bgheromobile.webp';
+// import image1carouselmobile from './images/Hero-Background/bgheromobile.webp';
 import work1 from './images/images-carousel/NeoCharge.png';
 import work2 from './images/images-carousel/calltrackingmetrics.png';
 import work3 from './images/images-carousel/impossiblehq.png';
@@ -56,9 +56,19 @@ export const HomeHero = () => {
   }, []); // Empty dependency array ensures the effect runs only once on component mount
 
   return (
-    <div className="MainHero" style={{ 
-      backgroundImage: window.innerWidth <= 767 ? `url(${image1carouselmobile})` : `url(${image1carousel})`,
-    }}>
+    <div className="MainHero" 
+    // style={{ backgroundImage: window.innerWidth <= 767 ? `url(${image1carouselmobile})` : `url(${image1carousel})`,}}
+    >
+<img style={{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    height: '100%',
+    width: '100%',
+}}
+src={image1carousel} alt='imagehero' />
       <div className="container-max">
         <div className="Content_Hero">
           <h1> A creative minded web development agency  </h1>
