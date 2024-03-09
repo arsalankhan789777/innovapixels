@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom'; 
 import image1carousel from './images/Hero-Background/bghero.webp';
-// import image1carouselmobile from './images/Hero-Background/bgheromobile.webp';
+import image1carouselmobile from './images/Hero-Background/bgheromobile.webp';
 import work1 from './images/images-carousel/NeoCharge.png';
 import work2 from './images/images-carousel/calltrackingmetrics.png';
 import work3 from './images/images-carousel/impossiblehq.png';
@@ -9,6 +9,7 @@ import work4 from './images/images-carousel/jibble.io.png';
 
 export const HomeHero = () => {
   const imgElementsRef = useRef([]);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     imgElementsRef.current = document.querySelectorAll('.img_work_featured .imageAndContentMain');
@@ -53,22 +54,52 @@ export const HomeHero = () => {
       return () => clearInterval(animationInterval);
     }, 3000); // 6 seconds
 
-  }, []); // Empty dependency array ensures the effect runs only once on component mount
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
-    <div className="MainHero" 
-    // style={{ backgroundImage: window.innerWidth <= 767 ? `url(${image1carouselmobile})` : `url(${image1carousel})`,}}
-    >
-<img style={{
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    height: '100%',
-    width: '100%',
-}}
-src={image1carousel} alt='imagehero' />
+    <div className="MainHero">
+      {windowWidth <= 767 ? (
+        // show on mobile
+        <img
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            height: '100%',
+            width: '100%',
+          }}
+          src={image1carouselmobile}
+          alt='imagehero'
+        />
+      ) : (
+        // show on desktop
+        <img
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            height: '100%',
+            width: '100%',
+          }}
+          src={image1carousel}
+          alt='imagehero'
+        />
+      )}
+
+
       <div className="container-max">
         <div className="Content_Hero">
           <h1> A creative minded web development agency  </h1>
