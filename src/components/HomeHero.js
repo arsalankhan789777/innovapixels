@@ -7,7 +7,7 @@ import work2 from './images/images-carousel/calltrackingmetrics.png';
 import work3 from './images/images-carousel/impossiblehq.png';
 import work4 from './images/images-carousel/jibble.io.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 
@@ -73,7 +73,7 @@ export const HomeHero = ({ image }) => {
     <div className="MainHero">
       {windowWidth <= 767 ? (
         // show on mobile
-        <img
+        <LazyLoadImage
           style={{
             position: 'absolute',
             top: 0,
@@ -85,10 +85,11 @@ export const HomeHero = ({ image }) => {
           }}
           src={image1carouselmobile}
           alt='imagehero'
+          effect="blur"
         />
       ) : (
         // show on desktop
-        <img
+        <LazyLoadImage
           style={{
             position: 'absolute',
             top: 0,
@@ -100,14 +101,9 @@ export const HomeHero = ({ image }) => {
           }}
           src={image1carousel}
           alt='imagehero'
+          effect="blur"
         />
       )}
- <div>
-    <LazyLoadImage
-      src={image1carousel}
-      effect="blur"
-      />
-  </div>
 
       <div className="container-max">
         <div className="Content_Hero">
