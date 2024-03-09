@@ -6,8 +6,12 @@ import work1 from './images/images-carousel/NeoCharge.png';
 import work2 from './images/images-carousel/calltrackingmetrics.png';
 import work3 from './images/images-carousel/impossiblehq.png';
 import work4 from './images/images-carousel/jibble.io.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-export const HomeHero = () => {
+
+
+
+export const HomeHero = ({ image }) => {
   const imgElementsRef = useRef([]);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -98,7 +102,12 @@ export const HomeHero = () => {
           alt='imagehero'
         />
       )}
-
+ <div>
+    <LazyLoadImage
+      src={image1carousel}
+      effect="blur"
+      />
+  </div>
 
       <div className="container-max">
         <div className="Content_Hero">
