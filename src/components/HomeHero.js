@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom'; 
-import image1carousel from './images/Hero-Background/bghero.png';
-import image1carouselmobile from './images/Hero-Background/bgheromobile.png';
+import image1carousel from './images/Hero-Background/bghero.webp';
+import image1carouselmobile from './images/Hero-Background/bgheromobile.webp';
 import work1 from './images/images-carousel/NeoCharge.png';
 import work2 from './images/images-carousel/calltrackingmetrics.png';
 import work3 from './images/images-carousel/impossiblehq.png';
