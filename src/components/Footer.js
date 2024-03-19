@@ -13,7 +13,7 @@ const Footer = () => {
         <div className='footer-top'>
           <div className="footer__top__contact">
             <a href="tel:+44 (161) 818 7609" class="footer__top__phone">+44 (161) 818 7609</a>
-            <a className='footer__top__email' href='mailto:info@ruckusco.com'>info@innovapixels.com</a>
+            <a className='footer__top__email' href='mailto:info@innovapixels.com'>info@innovapixels.com</a>
           </div>
           <div className='nav-footer'>
             <Navbar />
