@@ -159,7 +159,6 @@ header li a:hover,
   transition: 0.1s all;
   height: 30px;
   filter: invert(1);
-
 }
 
 .Nav-Main li a.active::after,
@@ -168,7 +167,6 @@ header li a:hover,
   transition: 0.1s all;
   height: 30px;
   filter: invert(1);
-
 }
 
 a.btn2.active {
@@ -280,7 +278,7 @@ header.header-normal.header-bg .header-cta a {
 } */
 .svg--ruckus-logo path {
   stroke: #ffff;
-  stroke-width: .5;
+  stroke-width: 0.5;
 }
 
 header.header-normal.header-bg .svg--ruckus-logo path,
@@ -296,7 +294,6 @@ header.header-normal.header-bg .header-cta a:nth-child(2):hover {
 header.header-normal.header-bg a.btn2 {
   border: 0.5px solid #ff8300;
 }
-
 
 .Hero {
   overflow: hidden;
@@ -350,8 +347,6 @@ header.header-normal.header-bg a.btn2 {
   margin-bottom: -300px;
 } */
 
-
-
 .hero-title h1 .d-span strong {
   font-weight: 700;
 }
@@ -380,14 +375,14 @@ header.header-normal.header-bg a.btn2 {
   align-items: center;
   font-size: 23px;
   line-height: 23px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   width: fit-content;
-    background: #ff8300;
-    color: white;
-    height: 60px;
-    border-radius: 6px;
-    padding: 0 25px;
+  background: #ff8300;
+  color: white;
+  height: 60px;
+  border-radius: 6px;
+  padding: 0 25px;
 }
 
 .svg.svg--arrow.button-svg_arrow {
@@ -1301,7 +1296,7 @@ footer .footer-bot-navlink .menus ul li a,
   }
 }
 
-@media(max-width:870px) {
+@media (max-width: 870px) {
   .main-img-boxex {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -1323,7 +1318,7 @@ footer .footer-bot-navlink .menus ul li a,
 
   .Content_Hero p {
     width: 75%;
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .Content_Hero,
@@ -1342,11 +1337,7 @@ footer .footer-bot-navlink .menus ul li a,
   }
 }
 
-
-
 @media (max-width: 700px) {
-
-
   .footer-bot {
     display: block;
     text-align: center;
@@ -1445,7 +1436,6 @@ footer .footer-bot-navlink .menus ul li a,
   .contactform form {
     margin: 20px 0;
   }
-
 }
 
 @media (max-width: 450px) {
@@ -1652,7 +1642,6 @@ h2.our-work-heading {
   flex-wrap: wrap;
   gap: 10px;
 }
-
 
 .show-content a {
   width: 49.5%;
@@ -2509,14 +2498,6 @@ p.contact-info__contact-titlep2.stylesame-p {
     grid-template-columns: 1fr;
   }
 }
-
-
-
-
-
-
-
-
 
 /* TopLoadingBar.css */
 .top-loading-bar {

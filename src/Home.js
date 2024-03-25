@@ -5,6 +5,7 @@ import Brands from "./components/Brands";
 import HomeHero from "./components/HomeHero";
 import { ClientFeedback } from "./components/ClientFeedback";
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -48,7 +49,7 @@ const Home = () => {
               </p>
             </div>
             <div class="button-content z2">
-              <span class="b8 z2">See Who We Are</span>
+              <Link to="" className="b8 z2">See Who We Are</Link>
               <div class="svg svg--arrow button-svg_arrow">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
