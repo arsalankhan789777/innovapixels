@@ -381,9 +381,10 @@ header.header-normal.header-bg a.btn2 {
   display: flex;
   align-items: center;
   color: #ff8300;
-  font-size: 20px;
+  font-size: 23px;
   line-height: 23px;
-  font-weight: 700;
+  font-weight: 800;
+  text-decoration: underline;
   text-transform: uppercase;
 }
 
@@ -532,7 +533,6 @@ a.carousel-control-next span.visually-hidden {
   font-weight: 600;
   line-height: 44px;
   letter-spacing: 0em;
-  text-shadow: 0px 0px 10px #000000;
   text-align: left;
 }
 
