@@ -32,7 +32,9 @@
 a {
   text-decoration: none !important;
 }
-
+a:hover {
+  color: #ff8300 !important;
+}
 .container-max {
   max-width: 1250px;
   margin: auto;
