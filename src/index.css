@@ -373,14 +373,14 @@ header.header-normal.header-bg a.btn2 {
 .b8.z2 {
   display: flex;
   align-items: center;
-  font-size: 23px;
+  font-size: 21px;
   line-height: 23px;
   font-weight: 800;
   text-transform: capitalize;
   width: fit-content;
   background: #ff8300;
   color: black;
-  height: 70px;
+  height: 50px;
   border-radius: 6px;
   padding: 0 25px;
   letter-spacing: 1px;
