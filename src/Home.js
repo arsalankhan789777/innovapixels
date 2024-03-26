@@ -42,9 +42,9 @@ const Home = () => {
                 </span>
             </div>
             <div className="p-sec-2">
-              <p>
+              <div>
                 Our core strategic engagements in branding, platform design, platform development, and search engine optimization consistently drive desired outcomes and awareness.
-              </p>
+              </div>
             </div>
             <div class="button-content z2">
               <Link to="" className="b8 z2">See Who We Are</Link>
