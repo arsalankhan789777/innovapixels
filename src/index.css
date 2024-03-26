@@ -776,7 +776,9 @@ p.itservi {
   letter-spacing: 1.35px;
   margin: 0;
 }
-
+.img-boxes:hover p {
+  color: black;
+}
 .img-boxes {
   border-top: 2px solid #ff8300;
   padding-bottom: 30px;
