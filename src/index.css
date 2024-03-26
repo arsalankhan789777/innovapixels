@@ -677,7 +677,9 @@ button:disabled {
 .rec-slider-container {
   margin: 0 !important;
 }
-
+.MainHero img {
+  display: none;
+}
 .img-main img {
   width: 100%;
   height: 500px;
