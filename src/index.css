@@ -768,7 +768,9 @@ p.itservi {
 .main-img-boxex img {
   width: 175px;
 }
-
+a{
+  color: black !important;
+}
 .img-boxes p {
   color: #adadad;
   transition: color 0.25s cubic-bezier(0.56, 0.01, 0.4, 1);
