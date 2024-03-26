@@ -102,7 +102,7 @@ export const HomeHero = () => {
 
       <div className="container-max">
         <div className="Content_Hero">
-          <h1> A creative minded web development agency  </h1>
+          <h2> A creative minded web development agency  </h2>
           <p>Our skilled team executes each project with precision,
                   expertise, and impact. Innovation runs deep in our core.</p>
           <Link to="/Work" className="b8 z2">Check out our work</Link>
