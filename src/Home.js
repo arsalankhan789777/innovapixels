@@ -1,5 +1,4 @@
 // import VideoCarousel from "./components/VideoCarousel";
-import CarouselS3 from "./components/carousel";
 import Contacts4 from "./components/contact";
 import Brands from "./components/Brands";
 import HomeHero from "./components/HomeHero";
@@ -132,7 +131,6 @@ const Home = () => {
         </div>
       </div>
       <div className="section3">
-        <CarouselS3 />
       </div>
       <Brands />
       <ClientFeedback />
