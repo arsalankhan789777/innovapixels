@@ -768,8 +768,8 @@ p.itservi {
 .main-img-boxex img {
   width: 175px;
 }
-a{
-  color: black !important;
+a:not(header a) {
+  color: #000 !important;
 }
 .img-boxes p {
   color: #adadad;
