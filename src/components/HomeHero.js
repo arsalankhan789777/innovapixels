@@ -107,7 +107,7 @@ export const HomeHero = () => {
                   expertise, and impact. Innovation runs deep in our core.</p>
           <Link to="/Work" className="b8 z2">Check out our work</Link>
         </div>
-        <div className="AnimatedFlipp">
+        {/* <div className="AnimatedFlipp">
           <div className="img_work_featured">
             <div className='imageAndContentMain'>
               <img src={work1} alt='img' />
@@ -126,7 +126,7 @@ export const HomeHero = () => {
               <h1 className='heading_animated'>Testing and Maintenance</h1>
             </div>
           </div>
-        </div>
+        </div> */}
 
       </div>
     </div>
