@@ -36,12 +36,10 @@ const Home = () => {
         <div className="container-max">
           <div className="left-sec-2">
             <div className="h4-sec-2">
-              <h3>
                 For a decade, Innovapixels has consistently delivered influential work,
                 <span>
                   empowering both Businesses and global influencers.
                 </span>
-              </h3>
             </div>
             <div className="p-sec-2">
               <p>
