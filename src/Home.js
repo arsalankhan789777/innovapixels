@@ -36,15 +36,17 @@ const Home = () => {
         <div className="container-max">
           <div className="left-sec-2">
             <div className="h4-sec-2">
+              <p>
                 For a decade, Innovapixels has consistently delivered influential work,
-                <span>
+                <strong>
                   empowering both Businesses and global influencers.
-                </span>
+                </strong>
+              </p>
             </div>
             <div className="p-sec-2">
-              <div>
+              <p>
                 Our core strategic engagements in branding, platform design, platform development, and search engine optimization consistently drive desired outcomes and awareness.
-              </div>
+              </p>
             </div>
             <div class="button-content z2">
               <Link to="" className="b8 z2">See Who We Are</Link>
