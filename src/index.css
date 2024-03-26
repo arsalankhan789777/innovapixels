@@ -768,9 +768,9 @@ p.itservi {
 .main-img-boxex img {
   width: 175px;
 }
-a:not(header a) {
-  color: #3333FF !important;
-  text-decoration: underline !important;
+a, a h2, a p {
+  background: black !important;
+  color: white !important;
 }
 .img-boxes p {
   color: #adadad;
