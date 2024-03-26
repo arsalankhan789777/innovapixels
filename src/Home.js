@@ -38,9 +38,6 @@ const Home = () => {
             <div className="h4-sec-2">
               <h3>
                 For a decade, Innovapixels has consistently delivered influential work,
-                <strong>
-                  empowering both Businesses and global influencers.
-                </strong>
               </h3>
             </div>
             <div className="p-sec-2">

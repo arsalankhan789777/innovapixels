@@ -579,10 +579,6 @@ h1.heading_animated {
   font-weight: 300;
 }
 
-.h4-sec-2 h3 strong {
-  font-weight: 700;
-}
-
 .section2 .container-max {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
