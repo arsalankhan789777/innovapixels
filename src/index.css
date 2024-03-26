@@ -669,7 +669,11 @@ button:disabled {
   width: 100%;
   margin-right: 30px;
 }
-
+.main-carr a {
+  display: block;
+  cursor: pointer;
+  text-decoration: underline !important;
+}
 .rec-slider-container {
   margin: 0 !important;
 }
