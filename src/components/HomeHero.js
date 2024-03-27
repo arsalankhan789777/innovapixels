@@ -2,10 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom'; 
 import image1carousel from './images/Hero-Background/bghero.webp';
 import image1carouselmobile from './images/Hero-Background/bgheromobile.webp';
-import work1 from './images/images-carousel/NeoCharge.png';
-import work2 from './images/images-carousel/calltrackingmetrics.png';
-import work3 from './images/images-carousel/impossiblehq.png';
-import work4 from './images/images-carousel/jibble.io.png';
 
 export const HomeHero = () => {
   const imgElementsRef = useRef([]);
