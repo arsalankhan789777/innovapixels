@@ -2,9 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom'; 
 import image1carousel from './images/Hero-Background/bghero.webp';
 import image1carouselmobile from './images/Hero-Background/bgheromobile.webp';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-
-
 
 export const HomeHero = () => {
   const imgElementsRef = useRef([]);
@@ -99,12 +96,6 @@ export const HomeHero = () => {
           fetchpriority="high"
         />
       )}
-
-
-<LazyLoadImage
-    alt="imageblur"
-    effect="blur"
-    src={image1carousel} />
 
 
       <div className="container-max">

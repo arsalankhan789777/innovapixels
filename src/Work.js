@@ -29,6 +29,9 @@ import webflow1 from './components/images/images-carousel/prismaticcapital.png';
 import webflow2 from './components/images/images-carousel/moriss.png';
 import webflow3 from './components/images/images-carousel/flowresearchcollective.png';
 import Squarespace1 from './components/images/images-carousel/meyercenter.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+
 
 function TabSet({ title, tabs, activeTab, updateActiveTab }) {
   const [isToggled] = useState(false);
@@ -319,7 +322,9 @@ function ReactTabs() {
                 {activeTab === tab.id &&
                   tab.content.slice(startIndex, endIndex).map((anchor, index) => (
                     <a key={index} href={anchor.link} className="content-anchor">
-                      <img src={anchor.image} alt={`img-${index}`} />
+                      {/* <img src={anchor.image} alt={`img-${index}`} /> */}
+
+                      <LazyLoadImage src={anchor.image} effect="blur" alt={`img-${index}`} />
                       <div className='content-dis'>
                         <p>{anchor.heading}</p>
                         <span>
