@@ -445,7 +445,10 @@ a.carousel-control-next span.visually-hidden {
   clip: unset !important;
   color: transparent;
 }
-
+span.lazy-load-image-background{
+  z-index: 99999;
+  position: relative;
+}
 a.carousel-control-next span.visually-hidden {
   transform: rotate(180deg);
   margin-left: 29px !important;
