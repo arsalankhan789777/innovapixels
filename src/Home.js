@@ -37,7 +37,7 @@ const Home = () => {
           <div className="left-sec-2">
             <div className="h4-sec-2">
               <p>
-                For a decade, Innovapixels has consistently delivered influential work,
+                aFor a decade, Innovapixels has consistently delivered influential work,
                 <strong>
                   empowering both Businesses and global influencers.
                 </strong>
