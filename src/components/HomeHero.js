@@ -2,6 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom'; 
 import image1carousel from './images/Hero-Background/bghero.webp';
 import image1carouselmobile from './images/Hero-Background/bgheromobile.webp';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 export const HomeHero = () => {
   const imgElementsRef = useRef([]);
@@ -65,8 +68,7 @@ export const HomeHero = () => {
     <div className="MainHero">
       {windowWidth <= 767 ? (
         // show on mobile
-        <img
-          style={{
+        <LazyLoadImage style={{
             position: 'absolute',
             top: 0,
             left: 0,
@@ -75,13 +77,11 @@ export const HomeHero = () => {
             height: '100%',
             width: '100%',
           }}
-          src={image1carouselmobile}
-          alt='imagehero'
-          fetchpriority="high"
+          src={image1carouselmobile} alt='imagehero' fetchpriority="high"
         />
       ) : (
         // show on desktop
-        <img
+        <LazyLoadImage
           style={{
             position: 'absolute',
             top: 0,
