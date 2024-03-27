@@ -21,6 +21,7 @@
     "babel-loader": "^9.1.3",
     "babel-plugin-macros": "^3.1.0",
     "bootstrap": "^5.2.0-beta1",
+    "clean-css-cli": "^5.6.3",
     "css-loader": "^6.10.0",
     "file-loader": "^6.2.0",
     "flickity": "^3.0.0",
@@ -50,12 +51,15 @@
     "slick-carousel": "^1.8.1",
     "style-loader": "^3.3.4",
     "styled-components": "^5.3.9",
+    "uglify-js": "^3.17.4",
     "web-vitals": "^2.1.4",
     "webpack": "^5.90.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
   "scripts": {
+    "minify": "npm run minify-css",
+    "minify-css": "cleancss src/index.css -o build/css/styles.min.css",
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
