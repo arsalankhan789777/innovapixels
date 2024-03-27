@@ -1750,7 +1750,7 @@ a.content-anchor p {
   margin-bottom: 10px;
 }
 
-a.content-anchor span {
+a.content-anchor span:not(.lazy-load-image-background) {
   font-size: 20px;
   line-height: 23px;
   font-weight: 700;
