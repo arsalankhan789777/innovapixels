@@ -92,6 +92,7 @@ export const HomeHero = () => {
           }}
           src={image1carousel}
           alt='imagehero'
+          fetchpriority="high"
         />
       )}
 
