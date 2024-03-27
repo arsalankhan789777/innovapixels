@@ -30,7 +30,7 @@ import webflow2 from './components/images/images-carousel/moriss.png';
 import webflow3 from './components/images/images-carousel/flowresearchcollective.png';
 import Squarespace1 from './components/images/images-carousel/meyercenter.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 function TabSet({ title, tabs, activeTab, updateActiveTab }) {
