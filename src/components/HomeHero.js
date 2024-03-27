@@ -77,6 +77,7 @@ export const HomeHero = () => {
           }}
           src={image1carouselmobile}
           alt='imagehero'
+          fetchpriority="high"
         />
       ) : (
         // show on desktop
