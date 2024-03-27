@@ -7,28 +7,28 @@
 
 @font-face {
   font-family: FuturaPT;
-  src: url(../src/components/fonts/futura-pt/FuturaPTLight.otf);
+  src: url(../src/components/fonts/futura-pt/FuturaPTLight.woff2);
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
   font-family: FuturaPT;
-  src: url(../src/components/fonts/futura-pt/FuturaPTMedium.otf);
+  src: url(../src/components/fonts/futura-pt/FuturaPTMedium.woff2);
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: FuturaPT;
-  src: url(../src/components/fonts/futura-pt/FuturaPTBold.otf);
+  src: url(../src/components/fonts/futura-pt/FuturaPTBold.woff2);
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
   font-family: FuturaPT;
-  src: url(../src/components/fonts/futura-pt/FuturaPTExtraBold.otf);
+  src: url(../src/components/fonts/futura-pt/FuturaPTExtraBold.woff2);
   font-weight: 800;
   font-display: swap;
 }
