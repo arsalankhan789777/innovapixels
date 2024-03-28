@@ -68,32 +68,11 @@ export const HomeHero = () => {
     <div className="MainHero">
       {windowWidth <= 767 ? (
         // show on mobile
-        <LazyLoadImage style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            height: '100%',
-            width: '100%',
-          }}
-          src={image1carouselmobile} alt='imagehero' fetchpriority="high"
+        <LazyLoadImage src={image1carouselmobile} alt='imagehero' fetchpriority="high" effect="blur"
         />
       ) : (
         // show on desktop
-        <LazyLoadImage
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            height: '100%',
-            width: '100%',
-          }}
-          src={image1carousel}
-          alt='imagehero'
-          fetchpriority="high"
+        <LazyLoadImage src={image1carousel} alt='imagehero' fetchpriority="high" effect="blur"
         />
       )}
 

@@ -446,8 +446,6 @@ a.carousel-control-next span.visually-hidden {
   color: transparent;
 }
 span.lazy-load-image-background{
-  z-index: 99999;
-  position: relative;
   display: flex !important;
 }
 a.carousel-control-next span.visually-hidden {
@@ -485,7 +483,16 @@ a.carousel-control-next span.visually-hidden {
   padding-bottom: 182px;
   position: relative;
 }
-
+.MainHero span.lazy-load-image-background {
+  position: absolute;
+  inset: 0px;
+  height: 100%;
+  width: 100%;
+}
+.MainHero span.lazy-load-image-background img{
+  height: 100%;
+  width: 100%;
+}
 .MainHero::after {
   position: absolute;
   content: "";
